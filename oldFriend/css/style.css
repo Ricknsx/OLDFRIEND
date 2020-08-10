@@ -1,0 +1,13 @@
+body{
+    background: rgb(213, 225, 226);
+}
+
+img{
+    height: 50px;
+    width: 250px;
+    margin-top:5px;
+}
+
+.nav-wrapper{
+    background-color: rgb(130, 202, 202);
+}
