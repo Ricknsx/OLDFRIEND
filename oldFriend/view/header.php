@@ -26,7 +26,7 @@
     <header>
     <nav>
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo"><img src="./img/logoTipado.png"></a>
+        <a href="#" class="brand-logo"><div class="logoHeader"></div></a>
         <a href="#" data-activates="menu-mobile" class="button-collapse">
         <i class="material-icons">menu</i>
         </a>
@@ -43,3 +43,4 @@
     </div>
     </nav>
     </header>
+<section class= "interface centro"> 
