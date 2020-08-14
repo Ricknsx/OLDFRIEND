@@ -32,7 +32,7 @@
         </a>
         <ul class="right hide-on-med-and-down">
             <li><a href="#">Consulta</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="view/contato.php">Contato</a></li>
             <li><a href="#">Login</a></li>
         </ul>
         <ul class="side-nav" id="menu-mobile">
