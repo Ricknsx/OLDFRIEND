@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel ="stylesheet" href="../css/contato.css"/>
-<<<<<<< HEAD
-    
     <title>Contato Old friend</title>
 </head>
 <body>
@@ -44,6 +42,11 @@
                 </div>    
             </form>
     </section>
+    <footer>
+        <?php include("footer.php")?>
+    </footer>
+</body>
+</html>
     <script>
         var button1 = document.getElementById('duvida1');
 
@@ -51,19 +54,3 @@
             alert("hello world")
         })
     </script>
-=======
-    <?php include("header.php")?>
-    <title>Contato Old friend</title>
-</head>
-<body>
-
-<h1>HELLO WORD</h1>
-<p>jahsjahsjahs
-</p>
-<p>ahsjahjhsja</p>
-<p>kaskjaskjaks</p>
-    
->>>>>>> bcbdfdfaed7a674cfa5c4a1b233972d4b322b64f
-</body>
-<?php include("footer.php")?>
-</html>
