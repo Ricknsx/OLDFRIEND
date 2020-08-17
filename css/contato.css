@@ -8,7 +8,16 @@ body{
     background-color: rgb(101, 192, 183);
     display: flex;
     width: 80%;
+<<<<<<< HEAD
     margin :50px auto;
+=======
+<<<<<<< HEAD
+    margin :50px auto;
+=======
+    margin-left: 130px;
+    margin-top: 50px;
+>>>>>>> 2c480d313aec1bc05519cbc997a532a5040d68a2
+>>>>>>> 51924266c2266a63eebbc709aee688d8cf20bbb6
     border: solid 0px;
     border-radius: 20px;
     border-color: gray;
@@ -16,11 +25,16 @@ body{
 
 .duvidas{
     background-color: white;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 51924266c2266a63eebbc709aee688d8cf20bbb6
     padding: 5%;
     width: 45% ;
     height: 85%;
     margin-left: 7%;
     border: solid 1px;
+<<<<<<< HEAD
     border-color: gray;
     margin-top: 4%;
     border-radius: 40px;
@@ -69,3 +83,102 @@ body{
     margin-top: 30%;
     padding:2%;
 }*/
+=======
+    border-color: gray;
+    margin-top: 4%;
+    border-radius: 40px;
+    margin-bottom: 4%;
+}
+
+.btnDuvida{
+    margin-bottom: 5%;
+    width: 100%;
+=======
+    padding: 40px;
+    width: 500px ;
+    height: 500px;
+    margin-left: 70px;
+    border: solid 1px;
+    border-color: gray;
+    margin-top: 50px;
+    border-radius: 40px;
+}
+
+.btnDuvida{
+    margin-bottom: 10px;
+    width: 400px;
+>>>>>>> 2c480d313aec1bc05519cbc997a532a5040d68a2
+    background: white;
+    border-radius: 50px;
+    border:solid 1px;
+    border-color: black;
+<<<<<<< HEAD
+}
+
+.formulario-contato{
+    width: 30% ;
+    height: 80%;
+    background-color: white;
+    border: solid 1px;
+    border-color: gray;
+    border-radius: 40px;
+    padding:3%;
+    margin-top: 4% ;
+    margin-left: 11%;
+}
+
+.btnEnviarDuvida{
+    background:rgb(175, 228, 235);
+    width: 70%;
+    height: 40px  ;
+    border: solid 0px;
+    border-radius: 30px ;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.mensagemContato{
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+/*.contato2{
+    border: solid 2px;
+    border-radius: 3px;
+    margin-top: 30%;
+    padding:2%;
+}*/
+=======
+}
+
+.formulario-contato{
+    width: 350px ;
+    height: 450px ;
+    background-color: white;
+    border: solid 0px;
+    border-color: gray;
+    border-radius: 40px;
+    padding:30px;
+    margin-top: 100px ;
+    margin-left: 60px ;
+    margin-bottom: 50px ;
+}
+
+.btnEnviarDuvida{
+    background:rgb(175, 228, 235);
+    width: 70px;
+    height: 40px ;
+    border: solid;
+    border-radius: 30px ;
+    border-color: rgb(175, 228, 235);
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.contato2{
+    border: solid 2px;
+    border-radius: 3px;
+    margin-top: 120px;
+}
+>>>>>>> 2c480d313aec1bc05519cbc997a532a5040d68a2
+>>>>>>> 51924266c2266a63eebbc709aee688d8cf20bbb6

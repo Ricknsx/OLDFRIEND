@@ -30,9 +30,20 @@
                     <h5><strong>Mensagem</strong><h5><br><textarea name="txMensagemContato" maxlenght="200" class="mensagemContato"></textarea>
                     <input type="submit" placeholder="Enviar" name="enviarDuvida" class="btnEnviarDuvida"/>
             </form>
+<<<<<<< HEAD
             <!--<div class="contato2">
                 <h5><b>oldfriendsuporte@gmail.com.br (11) 4002-8922</b></h5>
             </div>-->
+=======
+<<<<<<< HEAD
+            <!--<div class="contato2">
+                <h5><b>oldfriendsuporte@gmail.com.br (11) 4002-8922</b></h5>
+            </div>-->
+=======
+            <div class="contato2">
+                <h4>oldfriendsuporte@gmail.com.br (11) 4002-8922</h4>
+>>>>>>> 2c480d313aec1bc05519cbc997a532a5040d68a2
+>>>>>>> 51924266c2266a63eebbc709aee688d8cf20bbb6
     </section>
     <footer>
         <?php include("footer.php")?>
