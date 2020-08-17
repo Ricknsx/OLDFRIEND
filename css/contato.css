@@ -5,80 +5,67 @@ body{
 
 
 .corpo-FAQ{
-    background-color: white;
+    background-color: rgb(101, 192, 183);
     display: flex;
-    width: 100%;
+    width: 80%;
+    margin :50px auto;
+    border: solid 0px;
+    border-radius: 20px;
+    border-color: gray;
 }
 
 .duvidas{
     background-color: white;
-    padding: 40px;
-    width: 500px ;
-    height: 500px;
-    margin-left: 150px;
-    border: solid 5px;
+    padding: 5%;
+    width: 45% ;
+    height: 85%;
+    margin-left: 7%;
+    border: solid 1px;
     border-color: gray;
-    margin-top: 50px;
-    border-radius: 10px;
+    margin-top: 4%;
+    border-radius: 40px;
+    margin-bottom: 4%;
 }
 
-.btnDuvida1{
-    margin-bottom: 2px;
-    width: 400px;
+.btnDuvida{
+    margin-bottom: 5%;
+    width: 100%;
     background: white;
     border-radius: 50px;
-    border:solid 3px;
-    border-color: rgb(119, 113, 113);
-}
-
-.btnDuvida2{
-    margin-top: 10px;
-    width: 400px;
-    background: white;
-    border-radius: 50px;
-    border:solid 3px;
-    border-color: rgb(119, 113, 113);
-}
-
-.btnDuvida3{
-    margin-top: 10px;
-    width: 400px;background: white;
-    border-radius: 50px;
-    border:solid 3px;
-    border-color: rgb(119, 113, 113);
-}
-
-.btnDuvida4{
-    margin-top: 10px ;
-    width: 400px;
-    background: white;
-    border-radius: 50px;
-    border:solid 3px;
-    border-color: rgb(119, 113, 113);
-}
-
-.btnDuvida5{
-    margin-top:  10px;
-    width: 400px;
-    background: white;
-    border-radius: 50px;
-    border:solid 3px;
-    border-color: rgb(119, 113, 113);
+    border:solid 1px;
+    border-color: black;
 }
 
 .formulario-contato{
-    width: 350px ;
-    height: 450px ;
+    width: 30% ;
+    height: 80%;
     background-color: white;
-    border: solid 5px;
+    border: solid 1px;
     border-color: gray;
-    border-radius: 10px;
-    padding:30px;
-    margin-top: 100px ;
-    margin-left: 150px ;
-    margin-bottom: 50px ;
+    border-radius: 40px;
+    padding:3%;
+    margin-top: 4% ;
+    margin-left: 11%;
 }
 
-.nomeContato{
-    border: solid 2px;
+.btnEnviarDuvida{
+    background:rgb(175, 228, 235);
+    width: 70%;
+    height: 40px  ;
+    border: solid 0px;
+    border-radius: 30px ;
+    margin-left: 15%;
+    margin-top: 10%;
 }
+
+.mensagemContato{
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+/*.contato2{
+    border: solid 2px;
+    border-radius: 3px;
+    margin-top: 30%;
+    padding:2%;
+}*/
