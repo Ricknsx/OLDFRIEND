@@ -146,23 +146,39 @@ body{
    -webkit-flex: 0 0 auto;
 }
 
-/*CONTEUDO */
+/* SLIDE */
 
-.interface{
-	border-radius: 10px;
-	background: rgb(255,193,20);
-	background: linear-gradient(90deg, rgba(255,193,20,1) 0%, rgba(245,255,9,1) 47%, rgba(255,193,20,1) 100%);
-	padding: 10px;
-	width: 100%;
-	max-width:70%;
-	margin: 0 auto;
-	display: table;
-	
+.imgSlide{
+    height: 50%;
+    width: 50%;
+    margin: 0px auto;
 }
 
-.centro{
-	width: 100%;
-	max-width:100%;
-	margin: 0 auto;
-	display: table;
+.slide{
+    max-height: 60%;
+}
+.carousel{
+    position: RELATIVE;
+    -webkit-mask-image: -webkit-gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+/* CONTEUDO INDEX */
+.conteudo{
+    background-color: rgb(101, 192, 183);
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.btnCad{
+    background:rgb(175, 228, 235);
+    width: 100%;
+    border: solid;
+    border-radius: 20px ;
+    border-color: rgb(175, 228, 235);
+}
+
+p{
+    font-size: 18px;
 }

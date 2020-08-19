@@ -24,7 +24,7 @@
     </script>
     
     <header>
-    <nav>
+    <nav class= "header">
     <div class="nav-wrapper">
         <a href="#" class="brand-logo"><div class="logoHeader"></div></a>
         <a href="#" data-activates="menu-mobile" class="button-collapse">
@@ -43,4 +43,3 @@
     </div>
     </nav>
     </header>
-<section class= "interface centro"> 
