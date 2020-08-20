@@ -1,0 +1,33 @@
+.corpo-Login{
+    background-color: rgb(101, 192, 183);
+    display: flex;
+    width: 80%;
+    margin :50px auto;
+    border: solid 0px;
+    border-radius: 20px;
+    border-color: gray;
+}
+
+.formulario-Login{
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.txLogin {
+    
+    
+}
+
+
+.btn-cadastro-cliente{
+    margin-left: 30%;
+}
+
+.btn-cadastro-cuidador{
+    margin-left: 30%;
+    margin-top: 3%;
+}
+
+.margin-button{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}

@@ -33,7 +33,11 @@
         <ul class="right hide-on-med-and-down">
             <li><a href="#">Consulta</a></li>
             <li><a href="view/contato.php">Contato</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a class="button-login" href="#">Login</a></li>
+            <div>
+                <button class="b-login-cliente" style="display: none;">Login como cliente</button>
+                <button class="b-login-cuidador" style="display: none;">Login como cuidador</button>
+            </div>
         </ul>
         <ul class="side-nav" id="menu-mobile">
             <li><a href="#">Consulta</a></li>
@@ -43,3 +47,22 @@
     </div>
     </nav>
     </header>
+    <script>
+        var button = document.querySelector(".button-login");
+        var button2 = document.querySelector(".b-login-cliente");
+        var button3 = document.querySelector(".b-login-cuidador")
+        
+        button.onclick = function() {
+        //window.open('login-cliente.php', '_blank');
+        button2.style.display = "block";
+        button3.style.display = "block";
+        }
+
+        button2.onclick = function(){
+            window.open('view/login-cliente.php', '_blanck');
+        }
+
+        button3.onclick = function(){
+            window.open('view/login-cuidador.php', '_blanck');
+        }
+    </script>
