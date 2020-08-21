@@ -15,25 +15,25 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="img/idoso2.jpg" class="imgSlide">
+      <img src="img/slide1.jpg" class="imgSlide">
       <div class="carousel-caption">
-        <h3>Los Angeles</h3>
-        <p>LA is always so much fun!</p>
+        <h3>Encontre Cuidadores</h3>
+        <p>Cadastre-se e utilize nossa ferramenta para encontrar cuidadores.</p>
       </div>
     </div>
 
     <div class="item">
-      <img src="img/cuidador.jpg" class="imgSlide">
+      <img src="img/slide2.jpg" class="imgSlide">
       <div class="carousel-caption">
-        <h3>Chicago</h3>
-        <p>Thank you, Chicago!</p>
+        <h3>Aumento populacional</h3>
+        <p>De acordo com a OMS, estimasse que havera um aumento imenso na população idosa ate 2050.</p>
       </div>
     </div>
 
     <div class="item">
-      <img src="img/idoso1.jpg" class="imgSlide">
+      <img src="img/slide3.jpg" class="imgSlide">
       <div class="carousel-caption">
-        <h3>New York</h3>
+        <h3></h3>
         <p>We love the Big Apple!</p>
       </div>
     </div>
