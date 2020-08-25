@@ -26,6 +26,9 @@
     border-radius: 20px;
     background: white;
 }
+.btn-cadastro-cliente:hover{
+    background: rgb(225, 241, 239);
+}
 
 .btn-cadastro-cuidador{
     margin-left: 30%;
@@ -33,6 +36,10 @@
     border: solid 1px gray;
     border-radius: 20px;
     background: white;
+}
+
+.btn-cadastro-cuidador:hover{
+    background: rgb(225, 241, 239);
 }
 
 .margin-button{
