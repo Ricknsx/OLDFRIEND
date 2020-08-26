@@ -1,4 +1,4 @@
-<?php include ("view/header.php"); ?>
+<?php include ("header.php"); ?>
 <div>
 <?php include ("view/slide.php"); ?>
 </div>

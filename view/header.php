@@ -26,12 +26,12 @@
     <header>
     <nav class= "header">
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo"><div class="logoHeader"></div></a>
-        <a href="#" data-activates="menu-mobile" class="button-collapse">
+        <a href="../index.php" class="brand-logo"><div class="logoHeader"></div></a>
+        <a href="../index.php" data-activates="menu-mobile" class="button-collapse">
         <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#">Consulta</a></li>
+            <li><a href="cadCuidador2.php">Consulta</a></li>
             <li><a href="#">Contato</a></li>
             <li><a href="#">Login</a></li>
         </ul>
