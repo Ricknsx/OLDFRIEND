@@ -119,10 +119,6 @@ body{
     }
 }
 
-
-/* CSS utilizado para posicionar o rodapé no final da página. */
-/* Você pode remover isso. */
-
 html{
     height: 100%;
 }
@@ -146,23 +142,213 @@ body{
    -webkit-flex: 0 0 auto;
 }
 
-/*CONTEUDO */
+/* SLIDE */
 
-.interface{
-	border-radius: 10px;
-	background: rgb(255,193,20);
-	background: linear-gradient(90deg, rgba(255,193,20,1) 0%, rgba(245,255,9,1) 47%, rgba(255,193,20,1) 100%);
-	padding: 10px;
-	width: 100%;
-	max-width:70%;
-	margin: 0 auto;
-	display: table;
-	
+.imgSlide{
+    height: 50%;
+    width: 50%;
+    margin: 0px auto;
 }
 
-.centro{
-	width: 100%;
-	max-width:100%;
-	margin: 0 auto;
-	display: table;
+.slide{
+    max-height: 60%;
+}
+.carousel{
+    position: RELATIVE;
+    -webkit-mask-image: -webkit-gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+/* CONTEUDO INDEX */
+.conteudo{
+    background-color: rgb(116, 179, 172);
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.btnCad{
+    background:rgb(175, 228, 235);
+    width: 100%;
+    border: solid;
+    border-radius: 20px ;
+    border-color: rgb(175, 228, 235);
+}
+
+p{
+    font-size: 18px;
+}
+
+/* CADASTRO */
+
+.formulario-cadastro-cliente{
+    width: 70%;
+    max-width: 70%;
+    margin: auto;
+    padding: 5%;
+}
+
+.tx-dados-login{
+    width: 30%;
+    max-width: 30%;
+    float: left;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    border: solid 2px gray;
+    border-radius: 30px;
+    padding: 1%;
+    padding-bottom: 0%;
+    background: rgb(255, 255, 255);
+}
+
+.date-idade{
+    max-width: 30%;
+    width: 30%;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    float: left;
+    background: rgb(255, 255, 255);
+    border: solid 2px gray;
+    border-radius: 30px;
+    padding: 1%;
+    padding-bottom: 0%;
+}
+
+.select-sexo{
+    width: 30%;
+    max-width: 30%;
+    float: left;
+    background: black;
+}
+
+.titulo-localizacao{
+    float: left;
+}
+
+.btnEnviarCadastroCliente{
+    height: 50px;
+    max-height: 50px;
+    width: 30%;
+    max-width: 30%;
+    float: right;
+    margin-top: 3%;
+    margin-left: 3% ;
+    border: solid 1px gray;
+    border-radius: 20px;
+    background:white ;
+
+}
+
+.btnEnviarCadastroCliente:hover{
+    background: rgb(220, 230, 229);
+}
+
+/* LOGIN */
+
+.formulario-Login{
+    margin-left: 17%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 20px;
+    height: 70%;
+    background-color: white;
+    border: solid 1px gray;
+    border-radius: 20px;
+}
+
+.btn-cadastro-cliente{
+    width: 51%;
+    margin-left: 30%;
+    border: solid 1px gray;
+    border-radius: 20px;
+    background: white;
+}
+.btn-cadastro-cliente:hover{
+    background: rgb(225, 241, 239);
+}
+
+.btn-cadastro-cuidador{
+    margin-left: 30%;
+    margin-top: 3%;
+    border: solid 1px gray;
+    border-radius: 20px;
+    background: white;
+}
+
+.btn-cadastro-cuidador:hover{
+    background: rgb(225, 241, 239);
+}
+
+.margin-button{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.cadastre-se{
+    margin-left: 30%;
+    width: 51%;
+}
+
+.btnEnviarLogin{
+    background: rgb(161, 218, 212);
+    border: solid 0px ;
+    border-radius: 5px;
+    width: 50%;
+    height: 10%;
+    margin-bottom: 10%;
+    margin-left: 25%;
+}
+
+/* CONTATO */
+
+
+.duvidas{
+    background-color: white;
+    padding: 5%;
+    width: 45% ;
+    height: 85%;
+    margin-left: 7%;
+    border: solid 1px;
+    border-color: gray;
+    margin-top: 4%;
+    border-radius: 40px;
+    margin-bottom: 4%;
+}
+
+.btnDuvida{
+    margin-bottom: 5%;
+    width: 100%;
+    background: white;
+    border-radius: 50px;
+    border:solid 1px;
+    border-color: black;
+}
+
+.formulario-contato{
+    width: 30% ;
+    height: 80%;
+    background-color: white;
+    border: solid 1px;
+    border-color: gray;
+    border-radius: 40px;
+    padding:3%;
+    margin-top: 4% ;
+    margin-left: 11%;
+}
+
+.btnEnviarDuvida{
+    background:rgb(175, 228, 235);
+    width: 70%;
+    height: 40px  ;
+    border: solid 0px;
+    border-radius: 30px ;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.mensagemContato{
+    border: solid 1px;
+    border-radius: 10px;
 }

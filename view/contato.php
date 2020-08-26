@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel ="stylesheet" href="../css/contato.css"/>
-    <title>Contato Old friend</title>
-</head>
-<body>
-    
-    <header> <?php include("header.php")?> </header>
-    <section class ="corpo-FAQ">
+<?php include("header.php")?>
+    <section class ="conteudo">
         
         <div class="duvidas">
         <figcaption>
@@ -34,15 +23,12 @@
                 <h5><b>oldfriendsuporte@gmail.com.br (11) 4002-8922</b></h5>
             </div>-->
     </section>
-    <footer>
-        <?php include("footer.php")?>
-    </footer>
-</body>
-</html>
+
     <script>
         var button1 = document.getElementById('duvida1');
 
         button1.addEventListener('click',function(){
             alert("hello world")
         })
-    </script>
+    </script> 
+<?php include("footer.php")?>
