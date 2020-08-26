@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Footer-with-button-logo.css">
-    <link type="text/css" rel="stylesheet" href="../css/style.css"  />
-    <link type="text/css" rel="stylesheet" href="css/style.css"  />
-    
+    <link type="text/css" rel="stylesheet" href="../css/style.css"  />    
     <title>Old Friend</title>
 </head>
 <body>
@@ -24,15 +22,16 @@
     </script>
     
     <header>
-    <nav>
+    <nav class= "header">
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo"><div class="logoHeader"></div></a>
-        <a href="#" data-activates="menu-mobile" class="button-collapse">
+        <a href="../index.php" class="brand-logo"><div class="logoHeader"></div></a>
+        <a href="../index.php" data-activates="menu-mobile" class="button-collapse">
         <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#">Consulta</a></li>
-            <li><a href="view/contato.php">Contato</a></li>
+
+            <li><a href="#">Consulta</a></>
+            <li><a href="contato.php">Contato</a></li>
             <li><a class="button-login" href="#">Login</a></li>
             <div>
                 <button class="b-login-cliente" style="display: none;">Login como cliente</button>
@@ -59,10 +58,11 @@
         }
 
         button2.onclick = function(){
-            window.open('view/login-cliente.php', '_blanck');
+            window.open('login-cliente.php', '_blanck');
         }
 
         button3.onclick = function(){
-            window.open('view/login-cuidador.php', '_blanck');
+            window.open('login-cuidador.php', '_blanck');
         }
     </script>
+

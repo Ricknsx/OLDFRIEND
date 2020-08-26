@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="../css/cadastro-cliente.css">
-        <title>Cadastro OldFriend</title>
-    </head>
-<body>
-    <header><?php include('header.php')?></header>
+<?php include('header.php')?>
 
-    <section class="corpo-Login">
+    <section class="conteudo">
         <form action="" method="" class="formulario-cadastro-cliente">
             
             <legend class="titulo-localizacao">Dados para login</legend>
@@ -53,8 +44,5 @@
         </form>
     </section>
     
-    <footer>
-        <?php include('footer.php')?>
-    </footer>
-</body>
-</html>
+
+<?php include('footer.php')?>
