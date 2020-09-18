@@ -160,7 +160,7 @@ body{
 
 /* CONTEUDO INDEX */
 .conteudo{
-    background-color: rgb(116, 179, 172);
+    background-color: rgb(121, 187, 187);
     display: flex;
     width: 80%;
     margin: 10px auto;
@@ -175,74 +175,67 @@ body{
     border-color: rgb(175, 228, 235);
 }
 
+.button-consulta > p{
+    font-size: 20px;
+}
+
+.button-contato > p{
+    font-size: 20px;
+}
+
+.button-cadastro > a{
+    font-size: 20px;
+}
+
 p{
     font-size: 18px;
 }
 
 /* CADASTRO */
 
-.formulario-cadastro-cliente{
-    width: 70%;
-    max-width: 70%;
+.formulario-cadastro-cuidador{
     margin: auto;
-    padding: 5%;
+    width: 60%;
+    background-color:  rgb(121, 187, 187);
+    display: table;
 }
 
-.tx-dados-login{
-    width: 30%;
-    max-width: 30%;
+.input-cadastro{
+    margin: 3%;
+    background-color: #fff;
+    width: 40%;
     float: left;
-    margin-top: 3%;
-    margin-left: 3%;
-    margin-bottom: 3%;
-    border: solid 2px gray;
-    border-radius: 30px;
-    padding: 1%;
-    padding-bottom: 0%;
-    background: rgb(255, 255, 255);
+    border: solid 0px;
+    border-radius: 10px;
+    padding: 5px ;
+    height: 40px;
 }
 
-.date-idade{
-    max-width: 30%;
-    width: 30%;
-    margin-left: 3%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    float: left;
-    background: rgb(255, 255, 255);
-    border: solid 2px gray;
-    border-radius: 30px;
-    padding: 1%;
-    padding-bottom: 0%;
+.cor-preta::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: black;
 }
 
-.select-sexo{
-    width: 30%;
-    max-width: 30%;
-    float: left;
-    background: black;
-}
 
-.titulo-localizacao{
-    float: left;
+
+.select-cadastro{
+    width: 40%;
+    margin: 5%;
 }
 
 .btnEnviarCadastroCliente{
-    height: 50px;
-    max-height: 50px;
-    width: 30%;
-    max-width: 30%;
-    float: right;
-    margin-top: 3%;
-    margin-left: 3% ;
-    border: solid 1px gray;
-    border-radius: 20px;
-    background:white ;
-
+    width: 20%;
+    height: 40px;
+    margin-left: 35%;
+    margin-bottom: 5px;
+    border: solid 1px;
+    border-radius: 10px;
+    border-color:  rgb(173, 175, 175);
+    font-size: 15px;
+    font-family: arial;
 }
 
 .btnEnviarCadastroCliente:hover{
-    background: rgb(220, 230, 229);
+    background-color: rgb(210, 228, 228);
 }
 
 /* LOGIN */
@@ -259,8 +252,8 @@ p{
 }
 
 .btn-cadastro-cliente{
-    width: 51%;
     margin-left: 30%;
+    margin-top: 3%;
     border: solid 1px gray;
     border-radius: 20px;
     background: white;
