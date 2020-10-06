@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/Footer-with-button-logo.css">
     <link type="text/css" rel="stylesheet" href="../css/style.css"  />    
     <title>Old Friend</title>
@@ -30,7 +31,7 @@
         </a>
         <ul class="right hide-on-med-and-down">
 
-            <li><a href="#">Consulta</a></>
+            <li><a href="consulta.php">Consulta</a></>
             <li><a href="contato.php">Contato</a></li>
             <li><a class="button-login" href="#">Login</a></li>
             <div>
@@ -39,7 +40,7 @@
             </div>
         </ul>
         <ul class="side-nav" id="menu-mobile">
-            <li><a href="#">Consulta</a></li>
+            <li><a href="consulta.php">Consulta</a></li>
             <li><a href="#">Contato</a></li>
             <li><a href="#">Login</a></li>
         </ul>
