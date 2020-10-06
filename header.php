@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Footer-with-button-logo.css">
     <link type="text/css" rel="stylesheet" href="css/style.css"  />
-    
+
     <title>Old Friend</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
         $(".button-collapse").sideNav()
         });
     </script>
-    
+
     <header>
     <nav class= "header">
     <div class="nav-wrapper">
@@ -34,6 +34,7 @@
             <li><a class="button-consulta" href="#"><p>Consulta</p></a></>
             <li><a class="button-contato" href="view/contato.php"><p>Contato</p></a></li>
             <li><a class="button-login" href="view/login-cuidador.php"><p>Login (cuidador)</p></a></li>
+            <li><a class="button-login" href="view/painel.php"><p>meu perfil</p></a></li>
             <li><a class="button-cadastro" href="view/cadastro-cuidador.php"><p>Cadastre-se aqui</p></a></li>
             <!--<div>
                 <b
@@ -78,7 +79,7 @@
             button5.style.display = "block";
             button6.style.display = "block";
         }
-        
+
         button5.onclick = function(){
             window.open('view/cadastro-cliente.php', '_blanck');
         }
@@ -87,4 +88,3 @@
             window.open('view/cadastro-cuidador.php', '_blanck');
         }
     </script>-->
-

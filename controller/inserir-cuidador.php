@@ -1,6 +1,6 @@
 <?php
 	require("conexao.php");
-	
+
 	$email = $_POST['txEmailCuidador'];
 	$senha = $_POST['txSenhaCuidador'];
     $nome = $_POST['txNomeCuidador'];
@@ -14,9 +14,9 @@
     $bairro = $_POST['txBairroCuidador'];
     $foto = $_POST['fotoCuidador'];
     $curriculo = $_POST['curriculoCuidador'];
-	
+
 	try{
-        $stmt = $conn->prepare("INSERT INTO usuario VALUES (null,'$email','$senha', '$nome', '$idade', '$sexo', '$cep', '$estado', '$cidade', '$bairro', '$tel', '$disp', '$foto', '$curriculo');"); 
+        $stmt = $conn->prepare("INSERT INTO usuario VALUES (null, '$email', '$senha', '$nome', '$idade', '$sexo', '$cep', '$estado', '$cidade', '$bairro', '$tel', '$disp', '$foto', '$curriculo');");
         $stmt -> execute();
 
         header("location:../view/login-cuidador.php");

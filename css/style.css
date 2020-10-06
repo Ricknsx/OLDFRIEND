@@ -345,3 +345,26 @@ p{
     border: solid 1px;
     border-radius: 10px;
 }
+
+/* PAINEL DO USUARIO-CUIDADOR */
+
+.conteudoPainelUsuario{
+    width: 50%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    border: solid 0px;
+    border-radius: 20px;
+    box-shadow: 5px 8px gray;
+}
+
+
+.introducao-painelUsuario{
+    margin:0 auto;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: solid 0px ;
+    border-radius: 20px;
+    box-shadow: 5px 8px gray;
+}

@@ -2,7 +2,7 @@
 
         <section class="conteudo">
 
-            <form action="" method="" class="formulario-Login">
+            <form action="../controller/login.php" method="POST" class="formulario-Login">
             <legend><b>LOGIN</b></legend>
                 <div>
                     <strong>USUARIO</strong><input type="text" name="loginCliente" class="txLogin" required/>

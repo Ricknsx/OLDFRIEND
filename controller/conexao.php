@@ -1,8 +1,12 @@
-<?php	
-	$servidor="localhost";
-	$banco="bdoldfriend";
-	$usuario="root";
+<?php
+	$host="localhost";
+	$usuario = "root";
 	$senha="";
-	
-	$conn = new PDO("mysql:host=$servidor;dbname=$banco",$usuario,$senha); 
+	$bd="bdoldfriend";
+
+
+	$conn = new mysqli($host, $usuario, $senha, $bd);
+
+	/*if ($mysqli->connect_errno)
+	echo "Falha na conexao: (".$mysqli->connect_errno.") ".$mysqli->connect_error;*/
 ?>
