@@ -31,7 +31,7 @@
         </a>
         <ul class="right hide-on-med-and-down">
 
-            <li><a class="button-consulta" href="#"><p>Consulta</p></a></>
+            <li><a class="button-consulta" href="view/consulta.php"><p>Consulta</p></a></>
             <li><a class="button-contato" href="view/contato.php"><p>Contato</p></a></li>
             <li><a class="button-login" href="view/login-cuidador.php"><p>Login (cuidador)</p></a></li>
             <li><a class="button-login" href="view/painel.php"><p>meu perfil</p></a></li>

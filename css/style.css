@@ -454,5 +454,181 @@ p{
     padding: 10px;
     border: solid 0px ;
     border-radius: 20px;
+    box-shadow: 5px 8px gray;
+}
+
+/* FILTRO */
+
+.cont-filtro{
+    width: 100%;
+    max-width: 25%;
+    background:rgb(231, 245, 247);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* CONSULTA */
+
+.cont-consulta{
+    width: 100%;
+    max-width: 75%;
+    background:rgb(231, 245, 247);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.cont-perfil{
+    width: 100%;
+    max-width: 30%;
+    background:rgb(217, 230, 233);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    box-shadow: 5px 5px rgb(78, 78, 78) ;
+}
+
+.btn-perfil{
+    background: rgb(171, 204, 204);
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.btn-perfil:hover{
+    background: rgb(141, 177, 177);
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(218, 218, 218);
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border: none;
+}
+
+/* PERFIL */
+
+.cont-perfil-cuidador{
+    width: 100%;
+    margin:10px;
+    border-radius: 10px;
+    background: rgb(217, 230, 233);
+}
+
+.info-perfil{
+    width: 100%;
+    max-width: 80%;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+    display: table;
+    color: rgb(63, 69, 73);
+}
+
+.info-container{
+    margin:15px;
+}
+
+.info-title{
+    background: rgb(174, 212, 212);
+    padding:10px;
+    border-radius: 10px;
+}
+.info-pessoal-nome{
+    font-size: 25px;
+    font-weight: bold;
+    margin:10px 15px;
+    
+}
+
+.info-pessoal-idadeSexo{
+    font-size: 20px;
+    margin:5px 15px;
+}
+
+.local-text{
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+}
+
+.local-text h3{
+    background: lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.info-prof{
+    background:lightgrey;
+    border-radius: 10px;
+    min-height: 80px;
+    margin: 15px;
+
+}
+
+.info-prof-title{
+    margin-left: 15px;
+}
+
+.info-contato{
+    margin: 20px;
+}
+
+.btn-email{
+    background: rgb(171, 204, 204);
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 8px;
+    margin: 0 auto;
+    display: table;
+    border: none;
+}
+
+.btn-email:hover{
+    background: rgb(141, 177, 177);
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(218, 218, 218);
+    border-radius: 5px;
+    padding: 8px;
+    margin: 0 auto;
+    text-decoration: none;
+    border: none;
+}
+
+.info-prof-disp{
+    margin: 15px;
+    font-size: 20px;
+}
+
+.info-prof-disp h3{
+    background: lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.msgbox-perfil{
+    height:100px;
+    color: rgb(49, 66, 70);
+}
+::-webkit-input-placeholder{
+    color: rgb(49, 66, 70);
+}
+
+/* CONFIRMA ENVIO */
+
+.cont-envio{
+    margin: 15px;
     box-shadow: 5px 8px #999999;
 }

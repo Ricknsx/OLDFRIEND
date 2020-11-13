@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/Footer-with-button-logo.css">
     <link type="text/css" rel="stylesheet" href="../css/style.css"  />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
     <title>Old Friend</title>
 </head>
 <body>
@@ -31,7 +34,7 @@
         </a>
         <ul class="right hide-on-med-and-down">
 
-            <li><a class="button-consulta" href="#"><p>Consulta</p></a></>
+            <li><a class="button-consulta" href="consulta.php"><p>Consulta</p></a></>
             <li><a class="button-contato" href="contato.php"><p>Contato</p></a></li>
             <li><a class="button-login" href="login-cuidador.php"><p>Login (cuidador)</p></a></li>
             <li><a class="button-login" href="painel.php"><p>meu curriculo</p></a></li>

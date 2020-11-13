@@ -16,6 +16,7 @@ $result = mysqli_query($conn, $query);
 
 $row = mysqli_num_rows($result);
 
+
 if($row ==1 ){
   $_SESSION['usuario'] = $usuario;
   header('location: ../view/painel.php');
