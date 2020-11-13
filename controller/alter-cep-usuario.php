@@ -8,10 +8,7 @@ try{
 	$stmt = $conn->prepare("UPDATE usuario SET cep = '$cep' WHERE email = '{$_SESSION['usuario']}';");
 	$stmt -> execute();
 
-	/*echo "<script> alert('email alterado para' + '$email');</script>";*/
-	session_destroy();
-	header("location:../view/login-cuidador.php");
-
+	header("location:../view/painel.php");
 }
 catch(PDOException $e){
 	echo "ERRO: " . $e -> getMessage();
