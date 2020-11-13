@@ -1,11 +1,13 @@
-<?php	
-	$servidor="localhost";
-	$banco="tCuidador";
-	$usuario="root";
+<?php
+	$host="localhost";
+	$usuario = "root";
 	$senha="";
-	
-	$conn = new PDO("mysql:host=$servidor;dbname=$banco",$usuario,$senha); 
+	$bd="bdoldfriend";
 
-	$conexao= mysqli_connect($servidor,$usuario,$senha,$banco);
 
+	$conn = new mysqli($host, $usuario, $senha, $bd);
+
+	$conexao= mysqli_connect($host,$usuario,$senha,$bd);
+
+	$connFiltro = new PDO("mysql:host=$host;dbname=$bd",$usuario,$senha); 
 ?>

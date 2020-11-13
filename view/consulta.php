@@ -1,48 +1,52 @@
-<?php include("header.php"); 
-        require("../controller/conexao.php")
-?>
+<?php require("../controller/conexao.php"); ?>
+<?php include("header.php"); ?> 
+<section class="conteudo">
+    
+    <!-- FILTRO -->
+    <section class="cont-filtro">
+        
+        <h1>Filtro</h1>
+        <?php include("filtro.php"); ?>
 
-<div clas="cont-filtro-consulta">
-<div class="filtro">
-    <?php include("filtro.php"); ?>
-</div>
+    </section>
 
-            <?php
-            $mostrar= "";
+<!-- CONSTULA PERFIS -->
+
+<div class="cont-consulta">
+<?php
+           
+    while($row= mysqli_fetch_array($consulta)){							
+    
+        $nvlacesso= $row[14];  
+        if ($nvlacesso == "usuario"){
+            //TRATAMENTO NOME
+
+            $nome = $row[3];
+            $primeiroNome = explode(" ", $nome);
+
+            // TRATAMENTO DE IDADE					
+
+            $from = new DateTime("$row[4]");
+            $to   = new DateTime("today");       
+            $idadeConvertida = $from->diff($to)->y . " anos";
             
-            if($est == "" and $cid == "" and $sex == ""){
-                echo "<h1>Todos</h1>";
-            }
-            if($est != "Selecione..." and $est != ""){
-                $mostrar= $est;
-                echo "<h2>$mostrar</h2>";
-            }
-            if($cid != "" and $cid != "Selecione..."){
-                $mostrar= $mostrar." > ".$cid;
-                echo "<h2>$mostrar</h2>";
-            }
-            if($sex != "Selecione..." and $sex != ""){
-                $mostrar= $mostrar." > ".$sex;
-                echo "<h2>$mostrar</h2>";
-            }
-            echo"<div class='cont-consulta'>";
-                while($row= mysqli_fetch_array($consulta)){							
-                
-                    echo"<div class='cont-perfis'>
-                        <h1> $row[0]</h1>
-                        <h1> $row[1]</h1>
-                        <h2>$row[2]</h2>
-                        <h3>$row[3]</h3>
-                        <h5>$row[6]</h5>
-                        <h6>$row[7]</h6>
-                        <a class='btn-perfil'>Ver Perfil</a>
-                        </div>";               
-            }					
-    ?>
- 
-        <a class='botao' href='index.php'>Voltar</a>
+    
+            echo"<div class='cont-perfil'>
+                <h1>$row[7]</h1>
+                <h1>$primeiroNome[0]</h1>
+                <h2>$idadeConvertida</h2>
+                <h3>$row[8]</h3>
+                <h5>$row[9]</h5>
+                <h6>Disponibilidade: $row[11]</h6>
+                <br>
+                <a class='btn-perfil' href='perfil.php?id=$row[0]'>Ver Perfil</a>
+                </div>";             
+        }  
+    }					
+?>
 </div>
-    <script type="text/javascript" src="jquery.js"></script>
+</section>
+    <!-- PEGAR CIDADE/ESTADO -->
     <script>
     $("#estados").on("change",function(){
             
@@ -67,5 +71,5 @@
             });
     });
     </script>  
-<?php include("footer.php"); ?>
+
 <?php include("footer.php"); ?>

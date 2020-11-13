@@ -1,48 +1,101 @@
 <?php include('header.php')?>
 
     <section class="conteudo">
-        <form action="" method="" class="formulario-cadastro-cliente">
-            
-            <legend class="titulo-localizacao">Dados para login</legend>
-                <div class="tx-dados-login">
-                    <input type="text" placeholder="USUARIO" name="txUsuarioCliente" "/>
+        <form action="../controller/inserir-cuidador.php" method="POST" class="formulario-cadastro-cuidador">
+
+            <p style="font-style:italic;"><b>DADOS PARA LOGIN</b></p>
+            <div style="background-color:black; height: 2px;"></div>
+
+                <div class="input-cadastro">
+                <input type="email" placeholder="E-MAIL" class="cor-preta" name="txEmailCuidador" required/>
                 </div>
-                <div class="tx-dados-login">
-                    <input type="email" placeholder="E-MAIL" name="txEmailCliente" />
+
+                <div class="input-cadastro">
+                    <input type="password" placeholder="SENHA" class="cor-preta" name="txSenhaCuidador" required/>
                 </div>
-                <div class="tx-dados-login">
-                    <input type="password" placeholder="SENHA" name="txSenhaCliente" />
+
+                <p style="font-style:italic;"><b>INFORMACOES COMPLEMENTARES/PROFISSIONAIS</b></p>
+                <div style="background-color:black; height: 2px;"></div>
+                <div class="input-cadastro">
+                    <input type="text" placeholder="NOME COMPLETO" class="cor-preta" name="txNomeCuidador" required/>
                 </div>
-            
-            <legend class="titulo-localizacao">Informacoes basicas</legend>
-                <div class="tx-dados-login">
-                    <input type="text" placeholder="NOME COMPLETO" name="txNomeCliente" maxlenght="50"/>
+                <div class="input-cadastro">
+                    <input type="date" placeholder="" name="txIdadeCuidador" required/>
                 </div>
-                <div class="date-idade">
-                    <input type="date" placeholder="" name="txIdadeCliente"/>
+
+                <div class="input-cadastro" style="margin-right: 6%;">
+                    <input type="text" placeholder="TELEFONE" class="cor-preta" name="txTelCuidador" required>
                 </div>
-                <div class="select-sexo">
-                    <select  name="txSexoCliente" id="">
-                        <option value="Masculino">Masculino</option>
-                        <option value="Feminino">Feminino</option>
-                    </select>
+
+                <div class="input-group mb-3 select-cadastro" >
+
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Sexo</label>
                 </div>
-            <legend class="titulo-localizacao">Localizacao</legend>
-                <div class="tx-dados-login">
-                    <input type="text" placeholder="ESTADO" name="txEstadoCliente"/>
+
+                <select class="custom-select" id="inputGroupSelect01" name="txSexoCuidador">
+                    <option value="">selecione</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                </select>
                 </div>
-                <div class="tx-dados-login">
-                    <input type="text" placeholder="CIDADE" name="txCidadeCliente"/>
+
+                <div class="input-group mb-3 select-cadastro">
+
+                <div class="input-group-append">
+                    <label class="input-group-text" for="inputGroupSelect02">Disponibilidade</label>
                 </div>
-                <div class="tx-dados-login">
-                    <input type="text" placeholder="BAIRRO" name="txBairroCliente"/>
+
+                <select class="custom-select " id="inputGroupSelect02" name="txDispCuidador" required>
+                    <option value="">Selecione</option>
+                    <option value="Manha">Manha</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noite">Noite</option>
+                    <option value="Manha ou tarde">Manha ou tarde</option>
+                    <option value="Manha ou noite">Manha ou noite</option>
+                    <option value="Tarde ou noite">Tarde ou noite</option>
+                    <option value="Qualquer horario">Qualquer horario</option>
+                </select>
+
+
+                </div>
+
+                <p style="font-style:italic;"><b>CURRICULO</b></p>
+                <div style="background-color:black; height: 2px;"></div>
+                <div style="margin: 2%;">
+                    <input type="file" name="curriculoCuidador" required>
+                </div>
+
+                <p style="font-style:italic;"><b>FOTO DE PERFIL</b></p>
+                <div style="background-color:black; height: 2px;"></div>
+                <div style="margin:2%;">
+                    <input type="file" name="fotoCuidador">
+                </div>
+
+                <p style="font-style:italic;"><b>LOCALIZACAO</b></p>
+                <div style="background-color:black; height: 2px;"></div>
+                <div class="input-cadastro">
+                    <input type="text" placeholder="CEP" class="cor-preta" maxlenght="9" name="txCepCuidador" id="cep" required/>
+                </div>
+
+                <div class="input-cadastro">
+                    <input type="text" placeholder="ESTADO" class="cor-preta" name="txEstadoCuidador" id="localidade"/>
+                </div>
+
+                <div class="input-cadastro">
+                    <input type="text" placeholder="CIDADE" class="cor-preta" name="txCidadeCuidador" id="uf"/>
+                </div>
+
+                <div class="input-cadastro">
+                    <input type="text" placeholder="BAIRRO" class="cor-preta" name="txBairroCuidador" id="bairro"/>
                 </div>
                 <div>
-                    <input type="submit" value="Cadastrar" class="btnEnviarCadastroCliente"/>
+                    <input type="submit" value="Enviar" class="btnEnviarCadastroCliente"/>
                 </div>
-                
+
         </form>
-    </section>
-    
+</section>
+    <script src="../js/apiCep.js"></script>
+
 
 <?php include('footer.php')?>
