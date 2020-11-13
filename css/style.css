@@ -145,8 +145,8 @@ body{
 /* SLIDE */
 
 .imgSlide{
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     margin: 0px auto;
 }
 
@@ -165,6 +165,7 @@ body{
     width: 80%;
     margin: 10px auto;
     border-radius: 20px;
+    box-shadow: 5px 10px #999999;
 }
 
 .btnCad{
@@ -205,10 +206,26 @@ p{
     background-color: #fff;
     width: 40%;
     float: left;
-    border: solid 0px;
+    border: solid 1px gray;
     border-radius: 10px;
     padding: 5px ;
     height: 40px;
+    box-shadow: 3px 5px #999999;
+}
+
+.text-Info-Profissional{
+    margin: 3%;
+    background-color: #fff;
+    border: solid 3px #999999;
+    border-radius: 10px;
+    box-shadow: 3px 5px #999999;
+    
+}
+
+.text-Info-Profissional > textarea{
+    resize: none;
+    height: 200px;
+    border: solid 1px #999999;
 }
 
 .cor-preta::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -241,6 +258,7 @@ p{
 /* LOGIN */
 
 .formulario-Login{
+    width: 35%;
     margin-left: 17%;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -249,25 +267,19 @@ p{
     background-color: white;
     border: solid 1px gray;
     border-radius: 20px;
+    box-shadow: 4px 8px #999999;
 }
 
-.btn-cadastro-cliente{
-    margin-left: 30%;
-    margin-top: 3%;
-    border: solid 1px gray;
-    border-radius: 20px;
-    background: white;
-}
-.btn-cadastro-cliente:hover{
-    background: rgb(225, 241, 239);
-}
+
 
 .btn-cadastro-cuidador{
-    margin-left: 30%;
-    margin-top: 3%;
+    height: 110px;
+    width: 50%;
     border: solid 1px gray;
     border-radius: 20px;
     background: white;
+    margin-left: 10%;
+    box-shadow: 3px 7px #999999;
 }
 
 .btn-cadastro-cuidador:hover{
@@ -277,11 +289,14 @@ p{
 .margin-button{
     margin-top: 10%;
     margin-bottom: 10%;
+    margin-left: 10%;
 }
 
 .cadastre-se{
-    margin-left: 30%;
+    width: 30px;
+    margin-left: 10%;
     width: 51%;
+    font-family: arial;
 }
 
 .btnEnviarLogin{
@@ -301,34 +316,101 @@ p{
     background-color: white;
     padding: 5%;
     width: 45% ;
-    height: 85%;
+    height: 90%;
     margin-left: 7%;
     border: solid 1px;
     border-color: gray;
     margin-top: 4%;
     border-radius: 40px;
-    margin-bottom: 4%;
+    box-shadow: 5px 10px #999999;
 }
 
 .btnDuvida{
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     width: 100%;
     background: white;
-    border-radius: 50px;
+    border-radius: 5px;
     border:solid 1px;
-    border-color: black;
+    border-color: gray;
+    box-shadow: 3px 4px #999999;
+    padding-top:5px;
+}
+
+
+
+#drop-duvida p{
+    display: block;
+    font-size: 14px;
+    margin:0;
+    border: solid 1px #999999;
+    text-align: center;
+    padding: 2px;
+    box-shadow: 3px 4px #00aced;
+}
+
+#drop-duvida2 p{
+    display: block;
+    font-size: 14px;
+    margin:0;
+    border: solid 1px #999999;
+    text-align: center;
+    padding: 1%;
+    box-shadow: 3px 4px #00aced;
+}
+
+#drop-duvida3 p{
+    display: block;
+    font-size: 14px;
+    margin:0;
+    border: solid 1px #999999;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 3px 4px #00aced;
+}
+
+#drop-duvida4 p{
+    display: block;
+    font-size: 14px;
+    margin:0;
+    border: solid 1px #999999;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 3px 4px #00aced;
+}
+
+#drop-duvida5 p{
+    display: block;
+    font-size: 14px;
+    margin:0;
+    border: solid 1px #999999;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 3px 4px #00aced;
+    color: black;
+}
+
+#drop-duvida6 p{
+    display: block;
+    font-size: 14px;
+    margin:0;
+    border: solid 1px #999999;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 3px 4px #00aced;
 }
 
 .formulario-contato{
     width: 30% ;
-    height: 80%;
+    height: 500px;
     background-color: white;
     border: solid 1px;
     border-color: gray;
     border-radius: 40px;
     padding:3%;
-    margin-top: 4% ;
+    margin-top: 20% ;
     margin-left: 11%;
+    margin-bottom: 4%;
+    box-shadow: 5px 10px #999999;
 }
 
 .btnEnviarDuvida{
@@ -338,15 +420,21 @@ p{
     border: solid 0px;
     border-radius: 30px ;
     margin-left: 15%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .mensagemContato{
     border: solid 1px;
     border-radius: 10px;
+    resize: none;
+    height: 1%;
 }
 
 /* PAINEL DO USUARIO-CUIDADOR */
+
+.alter-info-usuario{
+    width: 50%;
+}
 
 .conteudoPainelUsuario{
     width: 50%;
@@ -355,7 +443,7 @@ p{
     padding: 10px;
     border: solid 0px;
     border-radius: 20px;
-    box-shadow: 5px 8px gray;
+    box-shadow: 5px 8px #999999;
 }
 
 
@@ -366,6 +454,7 @@ p{
     padding: 10px;
     border: solid 0px ;
     border-radius: 20px;
+<<<<<<< HEAD
     box-shadow: 5px 8px gray;
 }
 
@@ -542,4 +631,7 @@ p{
 
 .cont-envio{
     margin: 15px;
+=======
+    box-shadow: 5px 8px #999999;
+>>>>>>> 51b40073595f9ffa63859ecf5862a732b329ed2b
 }

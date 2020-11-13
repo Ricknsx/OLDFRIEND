@@ -65,7 +65,7 @@ include('header.php');
 			  	echo"<tr>";
 			  	  echo "<td scope='col'><b>E-mail :</b></td>";
 			  	  echo "<td><b>$row[email]</b></td>";
-			  	  echo "<td><form method='post' action='../controller/alter-data-usuario.php'><div class='alter-data-cuidador'><input type='text' name='alterEmail' required/></div><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
+			  	  echo "<td><form method='post' action='../controller/alter-email-usuario.php'><div class='alter-data-cuidador'><input type='text' name='alterEmail' required/></div><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
 			  	echo"</tr>";
 
 			      echo"<tr>";
@@ -94,13 +94,42 @@ include('header.php');
                     <option value='Masculino'>Masculino</option>
                     <option value='Feminino'>Feminino</option>
                 </select><input type='submit' value='alterar' class='submit-alter-select'/></form></td>";
-			  	  echo"</tr>";
-
-			      echo"<tr>";
-			  	  echo "<td scope='col'><b>CEP :</b></td>";
-			  	  echo "<td><b>$row[cep]</b></td>";
-			  	  echo "<td><form method='post' action='../controller/alter-cep-usuario.php'><div class='alter-data-cuidador'><input type='text' name='alterCep' required/></div><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
-			  	  echo"</tr>";
+					echo"</tr>";
+					
+					echo"<tr>";
+			  	  echo "<td scope='col'><b>Cidade :</b></td>";
+			  	  echo "<td><b>$row[cidade]</b></td>";
+			  	  echo "<td><form method='post' action='../controller/alter-cidade-usuario.php'><select class='custom-select' id='inputGroupSelect01' name='alterCidade' required>
+                    <option value=''>selecione</option>
+					<option value='AC'>AC</option>
+					<option value='AL'>AL</option>
+					<option value='AP'>AP</option>
+					<option value='AM'>AM</option>
+					<option value='BA'>BA</option>
+					<option value='CE'>CE</option>
+					<option value='DF'>DF</option>
+					<option value='ES'>ES</option>
+					<option value='GO'>GO</option>
+					<option value='MA'>MA</option>
+					<option value='MT'>MT</option>
+					<option value='MS'>MS</option>
+					<option value='MG'>MG</option>
+					<option value='PA'>PA</option>
+					<option value='PB'>PB</option>
+					<option value='PR'>PR</option>
+					<option value='PE'>PE</option>
+					<option value='PI'>PI</option>
+					<option value='RJ'>RJ</option>
+					<option value='RN'>RN</option>
+					<option value='RS'>RS</option>
+					<option value='RO'>RO</option>
+					<option value='RR'>RR</option>
+					<option value='SC'>SC</option>
+					<option value='SP'>SP</option>
+					<option value='SE'>SE</option>
+                    <option value='TO'>TO</option>
+                </select><input type='submit' value='alterar' class='submit-alter-select'/></form></td>";
+			  	  echo"</tr>";			      
 
 			      echo"<tr>";
 			  	  echo "<td scope='col'><b>Estado :</b></td>";
@@ -108,10 +137,10 @@ include('header.php');
 			  	  echo "<td><form method='post' action='../controller/alter-estado-usuario.php'><div class='alter-data-cuidador'><input type='text' name='alterEstado' required/></div><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
 			  	  echo"</tr>";
 
-			      echo"<tr>";
-			  	  echo "<td scope='col'><b>Cidade :</b></td>";
-			  	  echo "<td><b>$row[cidade]</b></td>";
-			  	  echo "<td><form method='post' action='../controller/alter-cidade-usuario.php'><div class='alter-data-cuidador'><input type='text' name='alterCidade' required/></div><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
+				  echo"<tr>";
+			  	  echo "<td scope='col'><b>CEP :</b></td>";
+			  	  echo "<td><b>$row[cep]</b></td>";
+			  	  echo "<td><form method='post' action='../controller/alter-cep-usuario.php'><div class='alter-data-cuidador'><input type='text' placeholder='exemplo: 12345-678' name='alterCep' required/></div><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
 			  	  echo"</tr>";
 
 			      echo"<tr>";
@@ -140,23 +169,33 @@ include('header.php');
                     <option value='Qualquer horario'>Qualquer horario</option>
                 </select><input type='submit' value='alterar' class='submit-alter-select'/></form></td>";
 			  	  echo"</tr>";
-
-			      echo"<tr>";
-			  	  echo "<td scope='col'><b>Foto de perfil :</b></td>";
-			  	  echo "<td><b>$row[foto]</b></td>";
-			  	  echo "<td><form method='post' action='../controller/alter-foto-usuario.php'><div class='alter-file-cuidador'><input type='file' name='alterFoto' required/></div><input type='submit' value='alterar' class='submit-alter-file'/></form></td>";
-			  	  echo"</tr>";
-
-			      echo"<tr>";
-			  	  echo "<td scope='col'><b>Curriculo :</b></td>";
-			  	  echo "<td><b>$row[curriculo]</b></td>";
-			  	  echo "<td><form method='post' action='../controller/alter-curriculo-usuario.php'><div class='alter-file-cuidador'><input type='file' name='alterCurriculo' required/></div><input type='submit' value='alterar' class='submit-alter-file'/></form></td>";
-			  	  echo"</tr>";
 		}
 			echo "</table>";
 
 		?>
+		
+	</section>
+
+	<section class="conteudoPainelUsuario" style="margin-top: 3%;" >
+		<table>
+			<?php
+
+			$dadosUsuario = "SELECT * FROM usuario WHERE email = '{$_SESSION['usuario']}'";
+			$resultado = mysqli_query($conn, $dadosUsuario);
+			while ($row = mysqli_fetch_assoc($resultado)) {
+				echo"<tr>";
+				echo "<td scope='col'><b>Experiencia profissional :</b></td>";
+				echo "<td><form method='post' action='../controller/alter-infoProf-usuario.php'><div><textarea cols='30' rows='10' name='alterInfoProf' style='height:1%; resize:none;' required/>$row[infoProfissional]</textarea></div><input type='submit' value='alterar' class='submit-alter-file'/></form></td>";
+				echo"</tr>";
+
+				echo"<tr>";
+				echo "<td scope='col'><b>Cursos extracurriculares :</b></td>";
+				echo "<td><form method='post' action='../controller/alter-cursos-usuario.php'><div><textarea cols='30' rows='10' name='alterCursos' style='height:1%; resize:none; margin-top:5%;' required/>$row[cursos]</textarea></div><input type='submit' value='alterar' class='submit-alter-file'/></form></td>";
+				echo"</tr>";
+			}
+			?>
 		</table>
 	</section>
+
 		
 <?php include('footer.php')?>

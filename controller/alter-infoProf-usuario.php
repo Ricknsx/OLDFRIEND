@@ -2,10 +2,10 @@
 session_start(); 
 require('conexao.php');
 
-$estado = $_POST['alterEstado'];
+$infoProf = $_POST['alterInfoProf'];
 
 try{
-	$stmt = $conn->prepare("UPDATE usuario SET estado = '$estado' WHERE email = '{$_SESSION['usuario']}';");
+	$stmt = $conn->prepare("UPDATE usuario SET infoProfissional = '$infoProf' WHERE email = '{$_SESSION['usuario']}';");
 	$stmt -> execute();
 
 	header("location:../view/painel.php");

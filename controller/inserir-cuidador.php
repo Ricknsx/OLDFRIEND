@@ -1,5 +1,5 @@
 <?php
-	require("conexao.php");
+	include("conexao.php");
 
 	$email = $_POST['txEmailCuidador'];
 	$senha = $_POST['txSenhaCuidador'];
@@ -12,11 +12,12 @@
     $estado = $_POST['txEstadoCuidador'];
     $cidade = $_POST['txCidadeCuidador'];
     $bairro = $_POST['txBairroCuidador'];
-    $foto = $_POST['fotoCuidador'];
-    $curriculo = $_POST['curriculoCuidador'];
+    $infoProf = $_POST['infoProfissional'];
+    $cursos = $_POST['textCursos'];
+
 
 	try{
-        $stmt = $conn->prepare("INSERT INTO usuario VALUES (null, '$email', '$senha', '$nome', '$idade', '$sexo', '$cep', '$estado', '$cidade', '$bairro', '$tel', '$disp', '$foto', '$curriculo');");
+        $stmt = $conn->prepare("INSERT INTO usuario VALUES (null, '$email', '$senha', '$nome', '$idade', '$sexo', '$cep', '$estado', '$cidade', '$bairro', '$tel', '$disp', '$infoProf',  '$cursos');");
         $stmt -> execute();
 
         header("location:../view/login-cuidador.php");
@@ -26,4 +27,4 @@
     }
 
 ?>
-<script>alert("cadastrado com sucesso!");</script>
+

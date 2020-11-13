@@ -8,7 +8,6 @@ try{
 	$stmt = $conn->prepare("UPDATE usuario SET nome = '$nome' WHERE email = '{$_SESSION['usuario']}';");
 	$stmt -> execute();
 
-	/*echo "<script> alert('email alterado para' + '$email');</script>";*/
 	session_destroy();
 	header("location:../view/login-cuidador.php");
 
