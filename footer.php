@@ -6,25 +6,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <img src="../img/logo.png" width="150" height="150"></img>
+                    <img src="img/logo.png" width="150" height="150"></img>
                 </div>
                 <div class="col-sm-2">
                     <h5>Inicio</h5>
                     <ul>
-                        <li><a href="../index.php">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-2">
                     <h5>Sobre-nós</h5>
                     <ul>
-                        <li><a href="../index.php">Informações da Empresa</a></li>
-                        <li><a href="contato.php">Contato</a></li>
+                        <li><a href="index.php">Informações da Empresa</a></li>
+                        <li><a href="view/contato.php">Contato</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-2">
                     <h5>Suporte</h5>
                     <ul>
-                        <li><a href="contato.php">FAQ</a></li>
+                        <li><a href="view/contato.php">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
