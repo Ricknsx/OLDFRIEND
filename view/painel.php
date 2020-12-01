@@ -97,9 +97,9 @@ include('header.php');
 					echo"</tr>";
 					
 					echo"<tr>";
-			  	  echo "<td scope='col'><b>Cidade :</b></td>";
-			  	  echo "<td><b>$row[cidade]</b></td>";
-			  	  echo "<td><form method='post' action='../controller/alter-cidade-usuario.php'><select class='custom-select' id='inputGroupSelect01' name='alterCidade' required>
+			  	  echo "<td scope='col'><b>Estado :</b></td>";
+			  	  echo "<td><b>$row[estado]</b></td>";
+			  	  echo "<td><form method='post' action='../controller/alter-estado-usuario.php'><select class='custom-select' id='inputGroupSelect01' name='alterEstado' required>
                     <option value=''>selecione</option>
 					<option value='AC'>AC</option>
 					<option value='AL'>AL</option>
@@ -132,9 +132,9 @@ include('header.php');
 			  	  echo"</tr>";			      
 
 			      echo"<tr>";
-			  	  echo "<td scope='col'><b>Estado :</b></td>";
-			  	  echo "<td><b>$row[estado]</b></td>";
-			  	  echo "<td><form method='post' action='../controller/alter-estado-usuario.php'><div class='alter-data-cuidador'><input type='text' name='alterEstado' required/></div><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
+			  	  echo "<td scope='col'><b>Cidade :</b></td>";
+			  	  echo "<td><b>$row[cidade]</b></td>";
+			  	  echo "<td><form method='post' action='../controller/alter-cidade-usuario.php'><div class='alter-data-cuidador'><input type='text' name='alterCidade' required/></div><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
 			  	  echo"</tr>";
 
 				  echo"<tr>";

@@ -70,11 +70,11 @@
                     </div>
 
                     <div class="input-cadastro">
-                        <input type="text" placeholder="ESTADO" class="cor-preta" name="txEstadoCuidador" id="localidade"/>
+                        <input type="text" placeholder="ESTADO" class="cor-preta" name="txEstadoCuidador" id="uf"/>
                     </div>
 
                     <div class="input-cadastro">
-                        <input type="text" placeholder="CIDADE" class="cor-preta" name="txCidadeCuidador" id="uf"/>
+                        <input type="text" placeholder="CIDADE" class="cor-preta" name="txCidadeCuidador" id="localidade"/>
                     </div>
 
                     <div class="input-cadastro">

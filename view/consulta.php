@@ -18,7 +18,7 @@
     while($row= mysqli_fetch_array($consulta)){							
     
         $nvlacesso= $row[14];  
-        if ($nvlacesso == "usuario"){
+        if ($nvlacesso != "adm"){
             //TRATAMENTO NOME
 
             $nome = $row[3];

@@ -17,7 +17,7 @@
 
 
 	try{
-        $stmt = $conn->prepare("INSERT INTO usuario VALUES (null, '$email', '$senha', '$nome', '$idade', '$sexo', '$cep', '$estado', '$cidade', '$bairro', '$tel', '$disp', '$infoProf',  '$cursos');");
+        $stmt = $conn->prepare("INSERT INTO usuario VALUES (null, '$email', '$senha', '$nome', '$idade', '$sexo', '$cep', '$estado', '$cidade', '$bairro', '$tel', '$disp', '$infoProf',  '$cursos', 'Usuario', now());");
         $stmt -> execute();
 
         header("location:../view/login-cuidador.php");
