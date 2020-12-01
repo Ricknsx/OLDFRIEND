@@ -37,7 +37,7 @@
                 $fetchAll = $select->fetchAll();
                 foreach($fetchAll as $estados)
                 {
-                    echo '<option value="'.$estados['id'].'">'.$estados['nome'].'</option>';
+                    echo '<option value="'.$estados['id'].'">'.$estados['sigla'].'</option>';
                 }
             ?>
     </select>

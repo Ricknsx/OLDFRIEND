@@ -1,6 +1,7 @@
 <?php include('header.php')?>
 
     <section class="conteudo">
+        <div class='cont-cadastro'>
         <form action="../controller/inserir-cuidador.php" method="POST" class="formulario-cadastro-cuidador">
 
             <p style="font-style:italic;"><b>DADOS PARA LOGIN</b></p>
@@ -70,11 +71,11 @@
                     </div>
 
                     <div class="input-cadastro">
-                        <input type="text" placeholder="ESTADO" class="cor-preta" name="txEstadoCuidador" id="localidade"/>
+                        <input type="text" placeholder="ESTADO" class="cor-preta" name="txEstadoCuidador" id="uf"/>
                     </div>
 
                     <div class="input-cadastro">
-                        <input type="text" placeholder="CIDADE" class="cor-preta" name="txCidadeCuidador" id="uf"/>
+                        <input type="text" placeholder="CIDADE" class="cor-preta" name="txCidadeCuidador" id="localidade"/>
                     </div>
 
                     <div class="input-cadastro">
@@ -85,14 +86,14 @@
                 <div style="background-color:black; height: 2px;"></div>
 
                     <div class="text-Info-Profissional">
-                        <textarea  cols="30" rows="30" name="infoProfissional" maxlenght="1000" require></textarea>
+                        <textarea  cols="30" rows="30" name="infoProfissional" data-ls-module="charCounter" maxlength="4999" require></textarea>
                     </div>
 
                     <p style="font-style:italic;"><b>CURSOS EXTRACURRICULARES</b></p>
                     <div style="background-color:black; height: 2px;"></div>
 
                     <div class="text-Info-Profissional">
-                        <textarea name="textCursos" cols="30" rows="30" maxlenght="1000"></textarea>
+                        <textarea name="textCursos" cols="30" rows="30" data-ls-module="charCounter" maxlength="4999"></textarea>
                     </div>
 
                 <div>
@@ -100,6 +101,7 @@
                 </div>
 
         </form>
+        </div>
 
     </section>
 
