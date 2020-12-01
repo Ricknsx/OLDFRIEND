@@ -24,7 +24,7 @@ while($row= mysqli_fetch_array($consulta)){
         <div class='info-container'> 
             <h1 class='info-title'>Dados Pessoais</h1>
             <div class='info-pessoal-nome'><?php echo $row[3];?></div>
-            <div class='info-pessoal-idadeSexo'><?php echo"$idadeConvertida Sexo: $row[5]"; ?></div>
+            <div class='info-pessoal-idadeSexo'><?php echo"$idadeConvertida  &nbsp &nbsp &nbsp Sexo: $row[5]"; ?></div>
         </div>
         <div class='info-container'> 
             <h1 class='info-title'>Localização</h1>
@@ -54,21 +54,8 @@ while($row= mysqli_fetch_array($consulta)){
             <div class='atencao'><strong>Atenção:</strong> Não forneça informações pessoais antes de efetuar contato com 
             o profissional, apenas outra forma de contato(número de telefone, whatsapp etc) se neccessário!</div>
             <form action=<?php echo"../controller/enviar-email.php?emailCui=$emailCui&nomeCui=$nomeCui"?> method="post">
-                <input type=text placeholder='nome' name='txNomeContato' class="txt-perfil"/>
-                <input type=email placeholder='E-mail' name='txEmailContato' class="txt-perfil"/>
-                <textarea class='mensagemContato msgbox-perfil' name='txMsgContato' maxlenght="200"></textarea>
-                <input class='btn-email' type='submit'>
-            </form>
-            </div>
-        </div>
-        </div><?php           
-}
-}
-else{
-    echo"<h1>Perfil não encontrado</h1>";
-}
-?>
-</div>
-</section>
+                <input type=text placeholder='nome' name='txNomeContato' class="txt-perfil" required/>
+                <input type=email placeholder='E-mail' name='txEmailContato' class="txt-perfil" required/>
+                <textarea class='mensagemContato msgbox-perfil' name='txMsgContato' maxlenght="200" required></textarea>                <input class='btn-email' type='submit'>            </form>            </div>        </div>        </div><?php           }}else{    echo"<h1>Perfil não encontrado</h1>";}?></div></section>
 
 <?php include("footer.php"); ?>

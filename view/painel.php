@@ -20,6 +20,9 @@ include('header.php');
 				font-family: arial;
 				
 			}
+			tr{
+				border-bottom:1px gray;
+			}
 
 			.custom-select{
 				width:150px;
@@ -59,7 +62,10 @@ include('header.php');
 		$dadosUsuario = "SELECT * FROM usuario WHERE email = '{$_SESSION['usuario']}'";
 		$resultado = mysqli_query($conn, $dadosUsuario);
 		while ($row = mysqli_fetch_assoc($resultado)) {
-
+			$atividade= $row['status'];
+			if($atividade== 1){
+				echo "<h2 style='color:red;'>Sua conta esta INATIVA! Entre em contato conosco para mais informações!</h2>";
+			}
 			
 			  echo "<tbody>";
 			  	echo"<tr>";
@@ -97,9 +103,9 @@ include('header.php');
 					echo"</tr>";
 					
 					echo"<tr>";
-			  	  echo "<td scope='col'><b>Cidade :</b></td>";
-			  	  echo "<td><b>$row[cidade]</b></td>";
-			  	  echo "<td><form method='post' action='../controller/alter-cidade-usuario.php'><select class='custom-select' id='inputGroupSelect01' name='alterCidade' required>
+			  	  echo "<td scope='col'><b>Estado :</b></td>";
+			  	  echo "<td><b>$row[estado]</b></td>";
+			  	  echo "<td><form method='post' action='../controller/alter-estado-usuario.php'><select class='custom-select' id='inputGroupSelect01' name='alterEstado' required>
                     <option value=''>selecione</option>
 					<option value='AC'>AC</option>
 					<option value='AL'>AL</option>
@@ -132,9 +138,9 @@ include('header.php');
 			  	  echo"</tr>";			      
 
 			      echo"<tr>";
-			  	  echo "<td scope='col'><b>Estado :</b></td>";
-			  	  echo "<td><b>$row[estado]</b></td>";
-			  	  echo "<td><form method='post' action='../controller/alter-estado-usuario.php'><div class='alter-data-cuidador'><input type='text' name='alterEstado' required/></div><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
+			  	  echo "<td scope='col'><b>Cidade :</b></td>";
+			  	  echo "<td><b>$row[cidade]</b></td>";
+			  	  echo "<td><form method='post' action='../controller/alter-cidade-usuario.php'><div class='alter-data-cuidador'><input type='text' name='alterCidade' required/></div><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
 			  	  echo"</tr>";
 
 				  echo"<tr>";
