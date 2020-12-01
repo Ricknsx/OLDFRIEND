@@ -1,5 +1,6 @@
 </section>
 </body>
+
 <div class="content">
 </div>
     <footer id="myFooter">

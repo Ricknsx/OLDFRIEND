@@ -1,0 +1,149 @@
+.navbar{
+  background:rgb(130, 202, 202);
+ 
+}
+
+.btn-sair{
+  float: right;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+.btn-sair:hover{
+  float: right;
+  text-decoration: none;
+  color: rgb(35, 230, 230);
+  font-weight: bolder;
+}
+
+/* LOGIN */
+  
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.logo-restrito img{
+  width: 100px;
+  height: 100px;
+  margin: 30px auto;
+  display: table;
+}
+
+
+/* ADM */
+
+.cont-dados-grafico{
+  display: flex;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+}
+.cont-dados{
+  width: 100%;
+  max-width: 30%;
+  background:rgb(231, 245, 247);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+  height: 300px;
+}
+
+.cont-grafico{
+  width: 100%;
+  max-width:60%;
+  margin: -50px;
+  border-radius: 40px;
+  padding: 10px;  
+
+}
+
+/* TABELA */
+
+.cont-tabela{
+  width: 100%;
+  max-width: 90%;
+  background:rgb(231, 245, 247);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  margin: 25px;
+  padding: 15px;
+}
+
+.table{
+  background-color: rgb(241, 251, 255);
+  border-radius: 10px;
+}
+
+.table thead{
+  font-size: 14px;
+}
+
+.campo-tab{
+  max-width: 200px;
+}
+
+.ativo{
+  color:green;
+}
+
+.inativo{
+  color:red;
+}
+/* ALTERAR */
+
+.conteudoPainelUsuario{
+  width: 80%;
+  background-color: rgb(229, 241, 241);
+  margin: 15px auto ;
+  padding: 10px;
+  border: solid 0px;
+  border-radius: 20px;
+  box-shadow: 5px 8px #999999;
+}
+
+.table-dados{
+  margin: 0 auto;
+}
+
+.table-dados tr td{
+  border-bottom: 1px solid;
+  padding: 15px;
+}

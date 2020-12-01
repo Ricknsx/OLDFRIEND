@@ -1,6 +1,38 @@
 body{
     background: rgb(213, 225, 226);
 }
+a:hover{
+    text-decoration:none;
+    color: rgb(51, 119, 126);
+}
+p{
+    font-size: 18px;
+}
+
+.btn-primary{
+    background-color: rgb(130, 202, 202);
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    box-shadow: none;
+}
+.btn-primary:hover{
+    background-color: rgb(120, 184, 184);
+    border: none;
+    box-shadow: none;
+}
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    background-color: none;
+    border: none;
+    box-shadow: none;
+}
+
+.btn:active{
+    background-color: rgb(120, 184, 184);
+    border: none;
+    box-shadow: none;
+}
+
 
 .logoHeader{
     background-image:url('../img/logoTipado.png'); 
@@ -151,6 +183,7 @@ body{
 }
 
 .slide{
+    margin-top:-10px;
     max-height: 60%;
 }
 .carousel{
@@ -160,10 +193,10 @@ body{
 
 /* CONTEUDO INDEX */
 .conteudo{
-    background-color: rgb(121, 187, 187);
+    background-color: rgb(142, 204, 204);
     display: flex;
     width: 80%;
-    margin: 10px auto;
+    margin: 30px auto;
     border-radius: 20px;
     box-shadow: 5px 10px #999999;
 }
@@ -176,28 +209,81 @@ body{
     border-color: rgb(175, 228, 235);
 }
 
-.button-consulta > p{
-    font-size: 20px;
+.cont-sobre{
+    background-color: rgb(231, 245, 247);
+    width: 100% ;
+    margin:20px;
+    border-radius: 20px; 
+    padding: 15px;
 }
 
-.button-contato > p{
-    font-size: 20px;
+.text-sobre{
+    width: 60%;
+    position: relative;
+    float: left;
 }
-
-.button-cadastro > a{
-    font-size: 20px;
-}
-
-p{
+.text-sobre p{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    text-align: justify;
+    color: rgb(72, 76, 77);
+    font-weight: 200;
+}
+
+
+.index-btns{
+    width: 40% ;
+    position: relative;
+    float: left;
+    padding: 20px;
+}
+
+.btn-index img{
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+}
+
+.btn-index div{
+    text-align: center;
+    height: 0 auto;
+    margin: 0 auto;
+}
+
+
+.btn-index a{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(95, 101, 102);
+    font-weight: bold;
+    background-color: #bdbdbd;
+}
+
+.btn-index a:hover{
+    text-decoration: none;
+    color: rgb(90, 131, 138);
+    font-weight: bolder;
+    background-color: #bdbdbd;
+    border-radius:10px;
+}
+
+.btn-index{
+    margin:10px;
+    margin-bottom: 25px;
 }
 
 /* CADASTRO */
+.cont-cadastro{
+    background-color: rgb(231, 245, 247);
+    width: 100% ;
+    margin:20px;
+    border-radius: 20px; 
+    padding: 15px;
+}
 
 .formulario-cadastro-cuidador{
     margin: auto;
     width: 60%;
-    background-color:  rgb(121, 187, 187);
     display: table;
 }
 
@@ -257,28 +343,37 @@ p{
 
 /* LOGIN */
 
-.formulario-Login{
-    width: 35%;
-    margin-left: 17%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding: 20px;
-    height: 70%;
-    background-color: white;
-    border: solid 1px gray;
-    border-radius: 20px;
-    box-shadow: 4px 8px #999999;
+.cont-login-cad{
+    background-color: rgb(231, 245, 247);
+    width: 100% ;
+    margin:20px;
+    border-radius: 20px; 
 }
-
+.cont-login{
+    width: 100%;
+    max-width: 50%;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    float: left;
+}
+.formulario-Login{
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
 
 
 .btn-cadastro-cuidador{
     height: 110px;
-    width: 50%;
-    border: solid 1px gray;
     border-radius: 20px;
+    border: none;
     background: white;
-    margin-left: 10%;
+    position: relative;
+    float: left;
     box-shadow: 3px 7px #999999;
 }
 
@@ -287,9 +382,10 @@ p{
 }
 
 .margin-button{
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 10%;
+  width: 30%;
+  margin: 50px;
+  position: relative;
+  float: left;
 }
 
 .cadastre-se{
@@ -311,106 +407,91 @@ p{
 
 /* CONTATO */
 
-
 .duvidas{
-    background-color: white;
+    background-color: rgb(231, 245, 247);
     padding: 5%;
-    width: 45% ;
-    height: 90%;
-    margin-left: 7%;
-    border: solid 1px;
-    border-color: gray;
-    margin-top: 4%;
-    border-radius: 40px;
-    box-shadow: 5px 10px #999999;
+    width: 50% ;
+    margin:20px;
+    border-radius: 20px; 
 }
 
+
 .btnDuvida{
-    margin-bottom: 1%;
+    margin-top: 10px;
     width: 100%;
     background: white;
     border-radius: 5px;
-    border:solid 1px;
-    border-color: gray;
+    border: none;
     box-shadow: 3px 4px #999999;
     padding-top:5px;
 }
 
-
+.btnDuvida:active{
+    margin-top: 10px;
+    width: 100%;
+    background: rgb(221, 221, 221);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px 4px #999999;
+    padding-top:5px;
+}
 
 #drop-duvida p{
     display: block;
     font-size: 14px;
     margin:0;
-    border: solid 1px #999999;
     text-align: center;
     padding: 2px;
-    box-shadow: 3px 4px #00aced;
+    box-shadow: 3px 4px #b3cdd6;
+    background-color: rgb(200, 228, 241);
 }
 
 #drop-duvida2 p{
     display: block;
     font-size: 14px;
     margin:0;
-    border: solid 1px #999999;
     text-align: center;
-    padding: 1%;
-    box-shadow: 3px 4px #00aced;
+    padding: 2px;
+    box-shadow: 3px 4px #b3cdd6;
+    background-color: rgb(200, 228, 241);
 }
 
 #drop-duvida3 p{
     display: block;
     font-size: 14px;
     margin:0;
-    border: solid 1px #999999;
     text-align: center;
-    padding: 5px;
-    box-shadow: 3px 4px #00aced;
+    padding: 2px;
+    box-shadow: 3px 4px #b3cdd6;
+    background-color: rgb(200, 228, 241);
 }
 
 #drop-duvida4 p{
     display: block;
     font-size: 14px;
     margin:0;
-    border: solid 1px #999999;
     text-align: center;
-    padding: 5px;
-    box-shadow: 3px 4px #00aced;
+    padding: 2px;
+    box-shadow: 3px 4px #b3cdd6;
+    background-color: rgb(200, 228, 241);
 }
 
 #drop-duvida5 p{
     display: block;
     font-size: 14px;
     margin:0;
-    border: solid 1px #999999;
     text-align: center;
-    padding: 5px;
-    box-shadow: 3px 4px #00aced;
-    color: black;
-}
-
-#drop-duvida6 p{
-    display: block;
-    font-size: 14px;
-    margin:0;
-    border: solid 1px #999999;
-    text-align: center;
-    padding: 5px;
-    box-shadow: 3px 4px #00aced;
+    padding: 2px;
+    box-shadow: 3px 4px #b3cdd6;
+    background-color: rgb(200, 228, 241);
 }
 
 .formulario-contato{
-    width: 30% ;
-    height: 500px;
-    background-color: white;
-    border: solid 1px;
-    border-color: gray;
-    border-radius: 40px;
+    width: 50% ;
+    background-color:rgb(231, 245, 247);
+    border-radius: 20px;
     padding:3%;
-    margin-top: 20% ;
-    margin-left: 11%;
-    margin-bottom: 4%;
-    box-shadow: 5px 10px #999999;
+    margin: 20px;
 }
 
 .btnEnviarDuvida{
@@ -513,7 +594,9 @@ p{
     text-decoration: none;
     border: none;
 }
-
+.atencao{
+    font-size: 14px
+}
 /* PERFIL */
 
 .cont-perfil-cuidador{

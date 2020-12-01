@@ -18,9 +18,14 @@
     while($row= mysqli_fetch_array($consulta)){							
     
         $nvlacesso= $row[14];  
+<<<<<<< HEAD
         if ($nvlacesso != "adm"){
+=======
+        $atividade= $row[16];
+        if ($nvlacesso != "adm"){
+            if($atividade == 0){
+>>>>>>> versão semi-final
             //TRATAMENTO NOME
-
             $nome = $row[3];
             $primeiroNome = explode(" ", $nome);
 
@@ -41,7 +46,8 @@
                 <br>
                 <a class='btn-perfil' href='perfil.php?id=$row[0]'>Ver Perfil</a>
                 </div>";             
-        }  
+            }
+        } 
     }					
 ?>
 </div>

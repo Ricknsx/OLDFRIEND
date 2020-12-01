@@ -20,6 +20,9 @@ include('header.php');
 				font-family: arial;
 				
 			}
+			tr{
+				border-bottom:1px gray;
+			}
 
 			.custom-select{
 				width:150px;
@@ -59,7 +62,10 @@ include('header.php');
 		$dadosUsuario = "SELECT * FROM usuario WHERE email = '{$_SESSION['usuario']}'";
 		$resultado = mysqli_query($conn, $dadosUsuario);
 		while ($row = mysqli_fetch_assoc($resultado)) {
-
+			$atividade= $row['status'];
+			if($atividade== 1){
+				echo "<h2 style='color:red;'>Sua conta esta INATIVA! Entre em contato conosco para mais informações!</h2>";
+			}
 			
 			  echo "<tbody>";
 			  	echo"<tr>";
