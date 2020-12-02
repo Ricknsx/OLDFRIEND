@@ -1,5 +1,5 @@
 <?php session_start(); 
-require('conexao/conexao.php');
+require('../controller/conexao.php');
 
 $ID = $_GET['id'];
 $foto = $_GET['foto'];
@@ -9,7 +9,7 @@ if($foto != ""){
 	$stmt = $connFiltro->prepare("UPDATE usuario SET status = 0 WHERE idusuario = '$ID';");
 	$stmt -> execute();
 
-	header("location:administrativo.php");
+	header("location:painel.php");
 }
 catch(PDOException $e){
 	echo "ERRO: " . $e -> getMessage();
@@ -17,7 +17,7 @@ catch(PDOException $e){
 }
 else{
 	echo ("<script>	window.alert('Falha ao ativar: usuário sem foto de perfil!!!');
-                window.location.href='administrativo.php';</script>");
+                window.location.href='../view/painel.php';</script>");
     }
 
 

@@ -12,48 +12,8 @@ include('header.php');
 		while ($row = mysqli_fetch_assoc($resultado)) { echo $row['nome'];} ?></h2>
 		<a href="../controller/logout.php" style="font-size: 20px; text-decoration: none;">sair</a>
 	</div>
-
-		<style type="text/css">
-			
-			td{
-				font-size: 13px;
-				font-family: arial;
-				
-			}
-			tr{
-				border-bottom:1px gray;
-			}
-
-			.custom-select{
-				width:150px;
-				margin-right: 10px;
-				margin-top: 10px;
-				margin-bottom: 10px;
-			}
-
-			.alter-data-cuidador{
-				width: 150px;
-				margin-left: 50px;
-				margin-top: 30px;
-			}
-
-			.submit-alter-data{
-				margin-left: 25%;
-			}
-
-			.alter-file-cuidador{
-				margin-top: 30px;
-			}
-
-			.submit-alter-file{
-				margin-top: 10px;
-			}
-
-			.submit-alter-select{
-				margin-top: 30px;
-			}
-		</style>
-		
+	
+	<div class='conteudo'>
 		<section class="conteudoPainelUsuario">
 		<table class="table-dados">
 			  
@@ -64,17 +24,17 @@ include('header.php');
 		while ($row = mysqli_fetch_assoc($resultado)) {
 			$atividade= $row['status'];
 			if($atividade== 1){
-				echo "<h2 style='color:red;'>Sua conta esta INATIVA! Entre em contato conosco para mais informações!</h2>";
+				echo "<h1>Status:<b style='color:red;'>Inativo</b></h1>";
 			}
-
-			  echo "<tbody>";
+			else{
+				echo "<h1>Status:<b style='color:green;'>Ativo</b></h1>";
+			}				
 				echo"<tr>";
 				  echo "<td scope='col'><b>Foto de perfil :</b></td>";
 				  echo "<td><img src='$row[foto]' style='width: 200px; height: 200px';/></td>";
 				  echo "<td><form action='../controller/fotoPerfil.php' method='post' enctype='multipart/form-data'><div class='alter-data-cuidador'><input type='file' name='txImagemPerfil' required/></div><input type='submit' value='Nova Foto' class='submit-alter-data'/></form></td>";
 			  echo"</tr>";
 			
-			  echo "<tbody>";
 			  	echo"<tr>";
 			  	  echo "<td scope='col'><b>E-mail :</b></td>";
 			  	  echo "<td><b>$row[email]</b></td>";
@@ -181,22 +141,9 @@ include('header.php');
                     <option value='Tarde ou noite'>Tarde ou noite</option>
                     <option value='Qualquer horario'>Qualquer horario</option>
                 </select><input type='submit' value='alterar' class='submit-alter-select'/></form></td>";
-			  	  echo"</tr>";
-		}
-			echo "</table>";
-
-		?>
-		
-	</section>
-
-	<section class="conteudoPainelUsuario" style="margin-top: 3%;" >
-		<table>
-			<?php
-
-			$dadosUsuario = "SELECT * FROM usuario WHERE email = '{$_SESSION['usuario']}'";
-			$resultado = mysqli_query($conn, $dadosUsuario);
-			while ($row = mysqli_fetch_assoc($resultado)) {
-				echo"<tr>";
+					echo"</tr>";
+					
+					echo"<tr>";
 				echo "<td scope='col'><b>Experiencia profissional :</b></td>";
 				echo "<td><form method='post' action='../controller/alter-infoProf-usuario.php'><div><textarea cols='30' rows='10' name='alterInfoProf' style='height:1%; resize:none;' required/>$row[infoProfissional]</textarea></div><input type='submit' value='alterar' class='submit-alter-file'/></form></td>";
 				echo"</tr>";
@@ -205,10 +152,36 @@ include('header.php');
 				echo "<td scope='col'><b>Cursos extracurriculares :</b></td>";
 				echo "<td><form method='post' action='../controller/alter-cursos-usuario.php'><div><textarea cols='30' rows='10' name='alterCursos' style='height:1%; resize:none; margin-top:5%;' required/>$row[cursos]</textarea></div><input type='submit' value='alterar' class='submit-alter-file'/></form></td>";
 				echo"</tr>";
+			
+			$idUser= $row['idusuario'];
+			$fotoPerfil=$row['foto'];
+			if($atividade == '1'){
+				echo "<div class='btn-ativar'>
+						<a href='ativarRegistro.php?id=$idUser&foto=$fotoPerfil'>Ativar Perfil</a>
+					</div>
+					<h2 style='color:red; text-align: center; margin: 10px;'>
+					Seu perfil está INATIVO! <br> Verifique se seu perfil está devidamente preenchido e reative-o! 
+					Em caso de duvidas ou problemas, entre em <a href=contato.php>contato</a> conosco para mais informações!
+					</h2>
+					<h1 class='info-title'> Alterar Dados</h1>";
 			}
-			?>
-		</table>
+			else{
+				echo "
+					<div class='btn-desativar'>
+						<a href='desativarRegistro.php?id=$idUser&foto=$fotoPerfil'>Desativar Perfil</a><br>
+					</div>
+				<p class='txt-desativar'>OBS: Ao desativar seu perfil, ele não aparecerá nas consultas. Para reativa-lo, basta logar
+				 e procurar pela opção <b>Ativar perfil</b>.</p>
+				 <h1 class='info-title'> Alterar Dados</h1>";
+			}
+		}
+			echo "</table>";
+			
+		?>
+		
 	</section>
+	</div>
+
 
 		
 <?php include('footer.php')?>

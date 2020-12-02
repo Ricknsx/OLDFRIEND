@@ -518,26 +518,91 @@ body{
 }
 
 .conteudoPainelUsuario{
-    width: 50%;
+    width: 100%;
     background-color: white;
-    margin: 0 auto;
+    margin: 20px;
     padding: 10px;
-    border: solid 0px;
     border-radius: 20px;
-    box-shadow: 5px 8px #999999;
+
 }
 
+.table-dados tr{
+    border-bottom: 1px solid  gray;
+}
 
+.table-dados tr td{
+    padding: 10px;
+    font-size: 14px;
+}
 .introducao-painelUsuario{
     margin:0 auto;
     background-color: white;
     margin-bottom: 20px;
     padding: 10px;
-    border: solid 0px ;
+    border: 10px solid  rgb(142, 204, 204);
     border-radius: 20px;
     box-shadow: 5px 8px gray;
 }
 
+.cont-desativar{
+    float: right;
+    width: 300px;
+}
+.btn-desativar{
+    background: rgb(156, 20, 20);
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 auto;
+    width: 150px;
+    border-radius: 15px
+}
+
+.btn-desativar:hover{
+    background: rgb(114, 14, 14);
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 auto;
+    width: 150px;
+    border-radius: 15px
+}
+
+.btn-desativar a{
+    color: white;
+}
+
+.txt-desativar{
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.btn-ativar{
+    background: rgb(24, 158, 69);
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 auto;
+    width: 130px;
+    border-radius: 15px
+}
+
+.btn-ativar:hover{
+    background: rgb(24, 158, 69);
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 auto;
+    width: 130px;
+    border-radius: 15px
+}
+
+.btn-ativar a{
+    color: white;
+}
 /* FILTRO */
 
 .cont-filtro{
@@ -625,6 +690,29 @@ body{
     padding:10px;
     border-radius: 10px;
 }
+
+.info-pessoais{
+    display: inline-block;
+    width: 100%;
+}
+
+
+.foto-perfil img{
+    width: 200px; 
+    height:200px; 
+    border-radius: 100px; 
+    margin-left:30px;
+}
+
+.foto-perfil{
+    float: left;
+    margin: 15px;
+}
+.nome-dados{
+    float: left;
+    margin: 50px 20px 20px 20px;
+}
+
 .info-pessoal-nome{
     font-size: 25px;
     font-weight: bold;
@@ -713,5 +801,5 @@ body{
 
 .cont-envio{
     margin: 15px;
-    box-shadow: 5px 8px #999999;
+
 }

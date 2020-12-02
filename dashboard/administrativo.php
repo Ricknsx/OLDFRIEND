@@ -178,6 +178,9 @@
 									<td class='campo-tab'>$row[3]</td>
 									<td class='campo-tab'>$row[1]</td>
 									<td>$row[15]</td>";
+									
+									$fotoPerfil= $row['foto'];
+
 									if($row[16]== 1){
 										$atividade= "<div class='inativo'>INATIVO</div>";
 									}
@@ -189,7 +192,7 @@
 									<td> <a type='button' class='btn btn-xs btn-warning' href='alterar/alterar.php?id=$row[0]'>Ver/Editar</a></td>
 									";
 									if($row[16] == 1){
-									  echo "<td> <a type='button' class='btn btn-xs btn-danger' href='ativarRegistro.php?id=$row[0]'>Ativar</a></td>";
+									  echo "<td> <a type='button' class='btn btn-xs btn-danger' href='ativarRegistro.php?id=$row[0]&foto=$fotoPerfil'>Ativar</a></td>";
 									}
 									else{
 										echo "<td> <a type='button' class='btn btn-xs btn-danger' href='desativarRegistro.php?id=$row[0]'>Desativar</a></td>";
