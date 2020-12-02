@@ -34,8 +34,8 @@
     
             echo"<div class='cont-perfil'>
                 <h1>$row[7]</h1>
+                <img src='$row[foto]'/ style='width: 100px; height: 100px; border-radius: 100px;'>
                 <h1>$primeiroNome[0]</h1>
-                <img src='$row[foto]'/ style='width: 100px; height: 100px;'>
                 <h2>$idadeConvertida</h2>
                 <h3>$row[8]</h3>
                 <h5>$row[9]</h5>

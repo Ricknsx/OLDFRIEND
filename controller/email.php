@@ -31,7 +31,7 @@
     $mail->setFrom('contato.oldfriend1@gmail.com', 'Old Friend');
     $mail->SingleTo = true; 
 
-    $mail->addAddress("ricardon258@gmail.com"); // email do destinatario.
+    $mail->addAddress("contato.oldfriend1@gmail.com"); // email do destinatario.
 
     $mail->Subject = $assunto_codificado;
     $mail->Body = $conteudo;

@@ -40,7 +40,11 @@
 		$resultado = mysqli_query($conn, $dadosUsuario);
 		while ($row = mysqli_fetch_assoc($resultado)) {
 
-			
+			 echo"<tr>";
+				  echo "<td scope='col'><b>Foto de perfil :</b></td>";
+				  echo "<td><img src='$row[foto]' style='width: 200px; height: 200px';/></td>";
+				  echo "<td><form action='../controller/fotoPerfil.php' method='post' enctype='multipart/form-data'><div class='alter-data-cuidador'><input type='file' name='txImagemPerfil' required/></div><input type='submit' value='Nova Foto' class='submit-alter-data'/></form></td>";
+			  echo"</tr>";
 			  echo "<tbody>";
 			  	echo"<tr>";
 			  	  echo "<td scope='col'><b>E-mail :</b></td>";
