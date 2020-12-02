@@ -24,6 +24,7 @@ while($row= mysqli_fetch_array($consulta)){
         <div class='info-container'> 
             <h1 class='info-title'>Dados Pessoais</h1>
             <div class='info-pessoal-nome'><?php echo $row[3];?></div>
+            <div><img src="<?php echo $row[17]?>" style="width: 200px; height:200px;"></div>
             <div class='info-pessoal-idadeSexo'><?php echo"$idadeConvertida  &nbsp &nbsp &nbsp Sexo: $row[5]"; ?></div>
         </div>
         <div class='info-container'> 
