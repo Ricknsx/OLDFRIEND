@@ -20,13 +20,12 @@
         $stmt = $conn->prepare("INSERT INTO usuario VALUES (null, '$email', '$senha', '$nome', '$idade', '$sexo', '$cep', '$estado', '$cidade', '$bairro', '$tel', '$disp', '$infoProf',  '$cursos', 'Usuario', now(), 0, null);");
         $stmt -> execute();
         
-        echo "<script> alert('cadastrado com sucesso!');<script>";
-        header("location:../view/login-cuidador.php");
+        echo ("<script>	window.alert('cadastrado com sucesso!');
+                window.location.href='../view/login-cuidador.php';</script>");
     }
 	catch(PDOException $e){
-        echo "<script> alert('cadastrado com sucesso!');<script>";
 		echo "Erro: " . $e -> getMessage();
     }
-    echo "<script> alert('cadastrado com sucesso!');<script>";
+    
 ?>
-<script> alert('cadastrado com sucesso!');<script>
+
