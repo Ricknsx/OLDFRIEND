@@ -66,6 +66,13 @@ include('header.php');
 			if($atividade== 1){
 				echo "<h2 style='color:red;'>Sua conta esta INATIVA! Entre em contato conosco para mais informações!</h2>";
 			}
+
+			  echo "<tbody>";
+				echo"<tr>";
+				  echo "<td scope='col'><b>Foto de perfil :</b></td>";
+				  echo "<td><img src='$row[foto]' style='width: 200px; height: 200px';/></td>";
+				  echo "<td><form action='../controller/fotoPerfil.php' method='post' enctype='multipart/form-data'><div class='alter-data-cuidador'><input type='file' name='txImagemPerfil' required/></div><input type='submit' value='Nova Foto' class='submit-alter-data'/></form></td>";
+			  echo"</tr>";
 			
 			  echo "<tbody>";
 			  	echo"<tr>";

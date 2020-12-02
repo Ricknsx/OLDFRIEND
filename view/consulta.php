@@ -18,13 +18,9 @@
     while($row= mysqli_fetch_array($consulta)){							
     
         $nvlacesso= $row[14];  
-<<<<<<< HEAD
-        if ($nvlacesso != "adm"){
-=======
         $atividade= $row[16];
         if ($nvlacesso != "adm"){
             if($atividade == 0){
->>>>>>> versão semi-final
             //TRATAMENTO NOME
             $nome = $row[3];
             $primeiroNome = explode(" ", $nome);
@@ -39,6 +35,7 @@
             echo"<div class='cont-perfil'>
                 <h1>$row[7]</h1>
                 <h1>$primeiroNome[0]</h1>
+                <img src='$row[foto]'/ style='width: 100px; height: 100px;'>
                 <h2>$idadeConvertida</h2>
                 <h3>$row[8]</h3>
                 <h5>$row[9]</h5>
