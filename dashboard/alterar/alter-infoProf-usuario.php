@@ -6,7 +6,7 @@ $id= $_GET['id'];
 $infoProf = $_POST['alterInfoProf'];
 
 try{
-	$stmt = $conn->prepare("UPDATE usuario SET infoProfissional = '$infoProf' WHERE email = '{$_SESSION['usuario']}';");
+	$stmt = $conn->prepare("UPDATE usuario SET infoProfissional = '$infoProf' WHERE  idusuario='$id';");
 	$stmt -> execute();
 
 	echo ("<script>	window.alert('informações alteradas com sucesso!');

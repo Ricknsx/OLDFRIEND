@@ -6,7 +6,7 @@ $id= $_GET['id'];
 $senha = $_POST['alterSenha'];
 
 try{
-	$stmt = $conn->prepare("UPDATE usuario SET senha = '$senha' WHERE email = '{$_SESSION['usuario']}';");
+	$stmt = $conn->prepare("UPDATE usuario SET senha = '$senha' WHERE  idusuario='$id';");
 	$stmt -> execute();
 
 	echo ("<script>	window.alert('Senha alterada com sucesso!');
