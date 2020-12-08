@@ -11,10 +11,16 @@
 	
 		$assunto_codificado = sprintf('=?%s?%s?%s?=', 'UTF-8', 'Q', quoted_printable_encode("OLD FRIEND - RECUPERACAO DE SENHA"));
 		$senhaUser = $row['senha'];
-		$conteudo = "sua senha atual e: " . $row['senha'] . " ***ATENCAO:*** caso voce não tenha solicitado a recuperacao da
-		 sua senha no site do Old Friend, altere a sua senha na plataforma para evitar qualquer tipo
-		 de invasao, se isso continuar va em nosso site na aba de contato e fale conosco,
-		 te retornaremos o mais rapido possivel!";
+		$conteudo = "
+		 Sua senha atual é: " . $row['senha'] . " 
+		
+		               ***ATENÇÃO*** 
+		 Caso você não tenha solicitado a recuperação da sua senha no site Old Friend, 
+		 altere a sua senha na plataforma para evitar qualquer tipo de invasão, se isso 
+		 continuar vá em nosso site na aba de contato e fale conosco, retornaremos o mais 
+		 rápido possível!
+		 
+		 - Equipe Old Friend -";
 		
 		require_once('class.phpmailer.php');
 		

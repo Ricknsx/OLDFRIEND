@@ -1,6 +1,6 @@
 <?php
     session_start();
-	require("conexao.php");
+	require("../conexao/conexao.php");
 
 	$erro = 0;
 	
@@ -21,11 +21,11 @@
 		
 								try {
 									//Linha SQL	
-									$stmt = $conn->prepare("UPDATE usuario SET foto = '$imagemPerfil' WHERE email = '{$_SESSION['usuario']}';");  
+									$stmt = $connAtivar->prepare("UPDATE usuario SET foto = '$imagemPerfil' WHERE email = '{$_SESSION['usuario']}';");  
 									$stmt->execute();				 				 
 									
                                     echo ("<script>	window.alert('foto inserida com sucesso!');
-                                                    window.location.href='../view/painel.php';</script>");							
+                                                    window.location.href='../administrativo.php';</script>");							
 									
 								}catch(PDOException $e) {
 									echo 'Error: ' . $e->getMessage();

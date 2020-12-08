@@ -8,7 +8,8 @@ try{
 	$stmt = $conn->prepare("UPDATE usuario SET cidade = '$cidade' WHERE email = '{$_SESSION['usuario']}';");
 	$stmt -> execute();
 
-	header("location:../view/painel.php");
+	echo ("<script>	window.alert('Cidada alterada com sucesso!');
+	window.location.href='../view/painel.php';</script>");	
 }
 catch(PDOException $e){
 	echo "ERRO: " . $e -> getMessage();

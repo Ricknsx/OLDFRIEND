@@ -9,7 +9,8 @@ try{
 	$stmt -> execute();
 
 	session_destroy();
-	header("location:../view/login-cuidador.php");
+	echo ("<script>	window.alert('Email alterado com sucesso! Realize o Login novamente!');
+	window.location.href='../view/painel.php';</script>");	
 }
 catch(PDOException $e){
 	echo "ERRO: " . $e -> getMessage();

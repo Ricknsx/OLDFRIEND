@@ -27,8 +27,10 @@
                     </div>
 
                     <div class="input-cadastro" style="margin-right: 6%;">
-                        <input type="text" placeholder="TELEFONE" class="cor-preta" name="txTelCuidador" required>
+                        <input type="text" placeholder="TELEFONE" class="cor-preta" name="txTelCuidador">
                     </div>
+
+                    
 
                 <div class="input-group mb-3 select-cadastro" >
 
@@ -43,7 +45,7 @@
                     </select>
 
                 </div>
-
+                
                 <div class="input-group mb-3 select-cadastro">
 
                     <div class="input-group-append">
@@ -62,7 +64,7 @@
                     </select>
 
                 </div>       
-
+                <p class='atencao-telefone'>Anteção: O número de telefone ficará exposto em seu perfil! Preencha apenas se concordar com isto!</p>
                 <p style="font-style:italic;"><b>LOCALIZACAO</b></p>
                 <div style="background-color:black; height: 2px;"></div>
 

@@ -41,10 +41,10 @@
             </div>
 
             <div class="drop-menu">
-                <button onclick="show_hide5()" class="btnDuvida"><h4>Eu consigo cadastrar meu curriculo sem ter um cadastro? </h4></button><br>
+                <button onclick="show_hide5()" class="btnDuvida"><h4>Eu consigo cadastrar meu currículo sem ter um cadastro? </h4></button><br>
                     <div style="display: none;" id="drop-duvida5">
-                        <p>Não! precisamos do cadastro do cuidador para que além do curriculo estar disponível tambem ter
-                         informacoes um pouco mais detalhadas para a o cliente encontra-lo com mais facilidade.</p>
+                        <p>Não! precisamos dos dados do cuidador para que além do currículo estar disponível, também ter
+                         informações um pouco mais detalhadas para a o cliente encontrá-lo com mais facilidade.</p>
                     </div>
             </div>
             
