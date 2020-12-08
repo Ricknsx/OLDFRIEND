@@ -125,7 +125,7 @@ include('header.php');
 			      echo"<tr>";
 			  	  echo "<td scope='col'><b>Telefone :</b></td>";
 			  	  echo "<td><b>$row[telefone]</b></td>";
-			  	  echo "<td><form method='post' action='../controller/alter-tel-usuario.php'><div class='alter-data-cuidador'><input type='text' name='alterTel' required/></div><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
+			  	  echo "<td><form method='post' action='../controller/alter-tel-usuario.php'><div class='alter-data-cuidador'><input type='text' name='alterTel'/></div><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
 			  	  echo"</tr>";
 
 			      echo"<tr>";

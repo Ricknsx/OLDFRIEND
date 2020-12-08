@@ -42,38 +42,38 @@
 
 			 echo"<tr>";
 				  echo "<td scope='col'><b>Foto de perfil :</b></td>";
-				  echo "<td><img src='$row[foto]' style='width: 200px; height: 200px';/></td>";
-				  echo "<td><form action='../controller/fotoPerfil.php' method='post' enctype='multipart/form-data'><div class='alter-data-cuidador'><input type='file' name='txImagemPerfil' required/></div><input type='submit' value='Nova Foto' class='submit-alter-data'/></form></td>";
+				  echo "<td><img src='../$row[foto]' style='width: 200px; height: 200px';/></td>";
+				  echo "<td><form action='fotoPerfil.php?id=$id' method='post' enctype='multipart/form-data'><div class='alter-data-cuidador'><input type='file' name='txImagemPerfil' required/></div><input type='submit' value='Nova Foto' class='submit-alter-data'/></form></td>";
 			  echo"</tr>";
 			  echo "<tbody>";
 			  	echo"<tr>";
 			  	  echo "<td scope='col'><b>E-mail :</b></td>";
 			  	  echo "<td><b>$row[email]</b></td>";
-			  	  echo "<td><form method='post' action='alter-email-usuario.php'><input type='text' name='alterEmail' required/><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
+			  	  echo "<td><form method='post' action='alter-email-usuario.php?id=$id'><input type='text' name='alterEmail' required/><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
 			  	echo"</tr>";
 
 			      echo"<tr>";
 			  	  echo "<td scope='col'><b>Senha :</b></td>";
 			  	  echo "<td><b>$row[senha]</b></td>";
-			  	  echo "<td><form method='post' action='alter-senha-usuario.php'><input type='password' name='alterSenha' required/><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
+			  	  echo "<td><form method='post' action='alter-senha-usuario.php?id=$id'><input type='password' name='alterSenha' required/><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
 			  	echo"</tr>";
 
 			      echo"<tr>";
 			  	  echo "<td scope='col'><b>Nome :</b></td>";
 			  	  echo "<td><b>$row[nome]</b>";
-			  	  echo "<td><form method='post' action='alter-nome-usuario.php'><input type='text' name='alterNome' required/><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
+			  	  echo "<td><form method='post' action='alter-nome-usuario.php?id=$id'><input type='text' name='alterNome' required/><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
 			  	  echo"</tr>";
 
 			      echo"<tr>";
 			  	  echo "<td scope='col'><b>Nascimento :</b></td>";
 			  	  echo "<td><b>$row[idade]</b></td>";
-			  	  echo "<td><form method='post' action='alter-date-usuario.php'><input type='date' name='alterDate' required/><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
+			  	  echo "<td><form method='post' action='alter-date-usuario.php?id=$id'><input type='date' name='alterDate' required/><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
 			  	  echo"</tr>";
 
 			      echo"<tr>";
 			  	  echo "<td scope='col'><b>Sexo :</b></td>";
 			  	  echo "<td><b>$row[sexo]</b></td>";
-			  	  echo "<td><form method='post' action='alter-sexo-usuario.php'><select class='custom-select' id='inputGroupSelect01' name='alterSexo' required>
+			  	  echo "<td><form method='post' action='alter-sexo-usuario.php?id=$id'><select class='custom-select' id='inputGroupSelect01' name='alterSexo' required>
                     <option value=''>selecione</option>
                     <option value='Masculino'>Masculino</option>
                     <option value='Feminino'>Feminino</option>
@@ -83,7 +83,7 @@
 					echo"<tr>";
 			  	  echo "<td scope='col'><b>Estado :</b></td>";
 			  	  echo "<td><b>$row[estado]</b></td>";
-			  	  echo "<td><form method='post' action='alter-estado-usuario.php'><select class='custom-select' id='inputGroupSelect01' name='alterEstado' required>
+			  	  echo "<td><form method='post' action='alter-estado-usuario.php?id=$id'><select class='custom-select' id='inputGroupSelect01' name='alterEstado' required>
                     <option value=''>selecione</option>
 					<option value='AC'>AC</option>
 					<option value='AL'>AL</option>
@@ -118,31 +118,31 @@
 			      echo"<tr>";
 			  	  echo "<td scope='col'><b>Cidade :</b></td>";
 			  	  echo "<td><b>$row[cidade]</b></td>";
-			  	  echo "<td><form method='post' action='alter-cidade-usuario.php'><input type='text' name='alterCidade' required/><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
+			  	  echo "<td><form method='post' action='alter-cidade-usuario.php?id=$id'><input type='text' name='alterCidade' required/><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
 			  	  echo"</tr>";
 
 				  echo"<tr>";
 			  	  echo "<td scope='col'><b>CEP :</b></td>";
 			  	  echo "<td><b>$row[cep]</b></td>";
-			  	  echo "<td><form method='post' action='alter-cep-usuario.php'><input type='text' placeholder='exemplo: 12345-678' name='alterCep' required/><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
+			  	  echo "<td><form method='post' action='alter-cep-usuario.php?id=$id'><input type='text' placeholder='exemplo: 12345-678' name='alterCep' required/><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
 			  	  echo"</tr>";
 
 			      echo"<tr>";
 			  	  echo "<td scope='col'><b>Bairro :</b></td>";
 			  	  echo "<td><b>$row[bairro]</b></td>";
-			  	  echo "<td><form method='post' action='alter-bairro-usuario.php'><input type='text' name='alterBairro' required/><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
+			  	  echo "<td><form method='post' action='alter-bairro-usuario.php?id=$id'><input type='text' name='alterBairro' required/><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
 			  	  echo"</tr>";
 			      
 			      echo"<tr>";
 			  	  echo "<td scope='col'><b>Telefone :</b></td>";
 			  	  echo "<td><b>$row[telefone]</b></td>";
-			  	  echo "<td><form method='post' action='alter-tel-usuario.php'><input type='text' name='alterTel' required/><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
+			  	  echo "<td><form method='post' action='alter-tel-usuario.php?id=$id'><input type='text' name='alterTel' required/><input type='submit' value='alterar' class='submit-alter-data'/></form></td>";
 			  	  echo"</tr>";
 
 			      echo"<tr>";
 			  	  echo "<td scope='col'><b>Disponibilidade:<b></td>";
 			  	  echo "<td><b>$row[disponibilidade]</b></td>";
-			  	  echo "<td><form method='post' action='alter-disp-usuario.php'><select class='custom-select' id='inputGroupSelect02' name='alterDisp' required>
+			  	  echo "<td><form method='post' action='alter-disp-usuario.php?id=$id'><select class='custom-select' id='inputGroupSelect02' name='alterDisp' required>
                     <option value=''>Selecione</option>
                     <option value='Manha'>Manha</option>
                     <option value='Tarde'>Tarde</option>
@@ -156,17 +156,19 @@
                 
                 echo"<tr>";
 				echo "<td scope='col'><b>Experiencia profissional :</b></td>";
-				echo "<td><form method='post' action='alter-infoProf-usuario.php'><div><textarea cols='30' rows='10' name='alterInfoProf' style='height:1%; resize:none;' required/>$row[infoProfissional]</textarea></div><input type='submit' value='alterar' class='submit-alter-file'/></form></td>";
+				echo "<td><form method='post' action='alter-infoProf-usuario.php?id=$id'><div><textarea cols='30' rows='10' name='alterInfoProf' style='height:1%; resize:none;' required/>$row[infoProfissional]</textarea></div><input type='submit' value='alterar' class='submit-alter-file'/></form></td>";
 				echo"</tr>";
 
 				echo"<tr>";
 				echo "<td scope='col'><b>Cursos extracurriculares :</b></td>";
-				echo "<td><form method='post' action='alter-cursos-usuario.php'><div><textarea cols='30' rows='10' name='alterCursos' style='height:1%; resize:none; margin-top:5%;' required/>$row[cursos]</textarea></div><input type='submit' value='alterar' class='submit-alter-file'/></form></td>";
+				echo "<td><form method='post' action='alter-cursos-usuario.php?id=$id'><div><textarea cols='30' rows='10' name='alterCursos' style='height:1%; resize:none; margin-top:5%;' required/>$row[cursos]</textarea></div><input type='submit' value='alterar' class='submit-alter-file'/></form></td>";
 				echo"</tr>";;
 		}
 			echo "</table>";
-
+			echo "<br>
+			      <a class='btn-apagar' href='deletar.php?id=$id'> Apagar Registro </a>";
 		?>
+		
 		
 	</section>
     </body>

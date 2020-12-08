@@ -21,7 +21,7 @@
 			if($_SESSION['usuarioNiveisAcessoId'] == "adm"){
 				header("Location: administrativo.php");
 			}else{
-				$_SESSION['loginErro'] = "Erro - Entre em contato cesar@celke.com.br";
+				$_SESSION['loginErro'] = "Acesso Negado";
 				header("Location: index.php");
 			}
 		}else{

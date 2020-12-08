@@ -4,8 +4,7 @@
         $est = isset($_GET['estado'])?$_GET['estado']:"";
         $sex = isset($_GET['sex'])?$_GET['sex']:"";
         $cid = isset($_GET['cidade'])?$_GET['cidade']:"";
-        $bar = isset($_GET['bar'])?$_GET['bar']:"";
-        
+       
         $sql= "select * from usuario where estado like '%$est%'";
 
         if($sex != "Selecione..." and $sex != ""){
@@ -15,9 +14,7 @@
         if($cid != "Selecione..." and $cid != ""){
             $sql= $sql . " and cidade like '%$cid%'";
         }
-        if($bar != "Selecione..." and $bar != ""){
-            $sql= $sql . " and bairro like '%$bar%'";
-        }
+      
         $consulta = mysqli_query($conexao,$sql);
         $registros = mysqli_num_rows($consulta);
 ?>

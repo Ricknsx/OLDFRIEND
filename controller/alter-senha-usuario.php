@@ -9,7 +9,8 @@ try{
 	$stmt -> execute();
 
 	session_destroy();
-	header("location:../view/login-cuidador.php");
+	echo ("<script>	window.alert('Senha alterada com sucesso!Realize o Login Novamente!');
+	window.location.href='../view/painel.php';</script>");	
 
 }
 catch(PDOException $e){

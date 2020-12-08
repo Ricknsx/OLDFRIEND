@@ -95,14 +95,17 @@
 	BETWEEN DATE_ADD(CURRENT_DATE(), INTERVAL -7 DAY) AND CURRENT_DATE()";
 	$mensal ="select * from usuario WHERE data_registro
 	BETWEEN DATE_ADD(CURRENT_DATE(), INTERVAL -30 DAY) AND CURRENT_DATE()";
+	$ativos = "select * from usuario where status= 0;";
 	
 	$consultaTotal = mysqli_query($conexao,$total);
 	$consultaSemanal= mysqli_query($conexao,$semanal);
 	$consultaMensal= mysqli_query($conexao,$mensal);
+	$consultaAtivos =mysqli_query($conexao,$ativos);
 	
 	$registrosTotal = mysqli_num_rows($consultaTotal);
 	$registrosSemanal = mysqli_num_rows($consultaSemanal);
 	$registrosMensal = mysqli_num_rows($consultaMensal);
+	$registrosAtivos = mysqli_num_rows($consultaAtivos);
 	
 ?>
 <div class="cont-dados-grafico">
@@ -111,6 +114,7 @@
 		<h3>Totais: <?php echo $registrosTotal; ?></h3>
 		<h3>Ultima Semana: <?php echo $registrosSemanal; ?></h3>
 		<h3>Ultimo Mês: <?php echo $registrosMensal; ?></h3>
+		<h3>Ativos: <?php echo $registrosAtivos; ?></h3>
 	</div>
 	<!-- Grafico -->
 
@@ -138,6 +142,9 @@
 	if($categoria == "Email" ){
 		$sql= "select * from usuario where email like '$consulta'";
 	}
+	if($consulta == ""){
+		$sql= "select * from usuario";
+	}
 	$consulta = mysqli_query($conexao,$sql); ?>	
 	<div class="cont-tabela">	
 		<h1>Usuários</h1>
@@ -151,6 +158,7 @@
 			</select>
 			<input type="text" placeholder="Consultar" name="txConsulta"></input>
 			<input type="submit" value="Consultar">
+			<input type="submit" value="Limpar">
 		</form>
 		<!-- TABELA -->
 		<div class="row">

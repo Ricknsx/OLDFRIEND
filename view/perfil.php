@@ -14,6 +14,7 @@ while($row= mysqli_fetch_array($consulta)){
     
     $emailCui= $row[1];
     $nomeCui= $row[3];
+    $foneCui= $row['telefone'];
     // TRATAMENTO DE IDADE					
 
     $from = new DateTime("$row[4]");
@@ -54,6 +55,15 @@ while($row= mysqli_fetch_array($consulta)){
         <div class='info-container'>
             <h1 class='info-title'>Contato</h1>
             <div class='info-contato'>
+            <?php 
+                if($foneCui != ""){
+                    echo "<p class='telefone'><strong>Telefone:</strong> $foneCui </p>";
+                }
+                else{
+                    echo "<p class='telefone'> <strong>Telefone:</strong> Não consta</p>";
+                }
+            
+            ?>
             <h3> Se interessou por este cuidador? Envie um email!</h3>
 
             <div class='atencao'><strong>Atenção:</strong> Não forneça informações pessoais antes de efetuar contato com 

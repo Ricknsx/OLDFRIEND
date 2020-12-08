@@ -147,3 +147,24 @@
   border-bottom: 1px solid;
   padding: 15px;
 }
+
+.btn-apagar{
+  background: rgb(156, 20, 20);
+  display: table;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-apagar:hover{
+  background: rgb(109, 14, 14);
+  display: table;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: rgb(189, 189, 189);
+  text-decoration: none;
+}

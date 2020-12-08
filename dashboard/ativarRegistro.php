@@ -6,7 +6,7 @@ $foto = $_GET['foto'];
 
 if($foto != ""){
 	try{
-	$stmt = $connFiltro->prepare("UPDATE usuario SET status = 0 WHERE idusuario = '$ID';");
+	$stmt = $connAtivar->prepare("UPDATE usuario SET status = 0 WHERE idusuario = '$ID';");
 	$stmt -> execute();
 
 	header("location:administrativo.php");
