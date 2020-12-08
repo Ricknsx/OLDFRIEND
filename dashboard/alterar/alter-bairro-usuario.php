@@ -6,7 +6,7 @@ $id= $_GET['id'];
 $bairro = $_POST['alterBairro'];
 
 try{
-	$stmt = $conn->prepare("UPDATE usuario SET bairro = '$bairro' WHERE email = '{$_SESSION['usuario']}';");
+	$stmt = $conn->prepare("UPDATE usuario SET bairro = '$bairro' WHERE  idusuario='$id';");
 	$stmt -> execute();
 
 	echo ("<script>	window.alert('Bairro alterado com sucesso!');

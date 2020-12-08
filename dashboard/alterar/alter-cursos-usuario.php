@@ -6,7 +6,7 @@ $id= $_GET['id'];
 $cursos = $_POST['alterCursos'];
 
 try{
-	$stmt = $conn->prepare("UPDATE usuario SET cursos = '$cursos' WHERE email = '{$_SESSION['usuario']}';");
+	$stmt = $conn->prepare("UPDATE usuario SET cursos = '$cursos' WHERE  idusuario='$id';");
 	$stmt -> execute();
 
 	echo ("<script>	window.alert('Cursos alterados com sucesso!');

@@ -6,7 +6,7 @@ $id= $_GET['id'];
 $tel = $_POST['alterTel'];
 
 try{
-	$stmt = $conn->prepare("UPDATE usuario SET telefone = '$tel' WHERE email = '{$_SESSION['usuario']}';");
+	$stmt = $conn->prepare("UPDATE usuario SET telefone = '$tel' WHERE  idusuario='$id';");
 	$stmt -> execute();
 
 	echo ("<script>	window.alert('telefone alterado com sucesso!');

@@ -6,7 +6,7 @@ $id= $_GET['id'];
 $cep = $_POST['alterCep'];
 
 try{
-	$stmt = $conn->prepare("UPDATE usuario SET cep = '$cep' WHERE email = '{$_SESSION['usuario']}';");
+	$stmt = $conn->prepare("UPDATE usuario SET cep = '$cep' WHERE  idusuario='$id';");
 	$stmt -> execute();
 
 	echo ("<script>	window.alert('CEP alterado com sucesso!');

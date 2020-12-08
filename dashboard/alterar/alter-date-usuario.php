@@ -6,7 +6,7 @@ $id= $_GET['id'];
 $idade = $_POST['alterDate'];
 
 try{
-	$stmt = $conn->prepare("UPDATE usuario SET idade = '$idade' WHERE email = '{$_SESSION['usuario']}';");
+	$stmt = $conn->prepare("UPDATE usuario SET idade = '$idade' WHERE  idusuario='$id';");
 	$stmt -> execute();
 
 	echo ("<script>	window.alert('Data alterada com sucesso!');
